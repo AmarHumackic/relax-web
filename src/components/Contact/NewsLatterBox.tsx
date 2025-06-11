@@ -29,7 +29,8 @@ const NewsLatterBox = () => {
           className="bg-primary shadow-submit hover:bg-primary/90 mb-5 flex w-full cursor-pointer items-center justify-center rounded-xs px-9 py-4 text-base font-medium text-white duration-300"
         />
         <p className="text-body-color text-center text-base leading-relaxed">
-          No spam guaranteed, So please don't send any spam mail.
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
+          No spam guaranteed, So please don&apos;t send any spam mail.
         </p>
       </div>
       <div>
