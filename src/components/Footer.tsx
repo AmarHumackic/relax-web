@@ -93,12 +93,14 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="space-y-4 text-gray-600">
               <p>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 At Apartment Relax Stolac, we believe that every guest deserves
                 a perfect stay. Our modern, fully-equipped apartments offer the
                 perfect blend of comfort and convenience, set against the
                 stunning backdrop of Stolac's natural beauty.
               </p>
               <p>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 Whether you're seeking a peaceful retreat or an adventure-filled
                 holiday, our apartments provide the ideal base for exploring the
                 rich history and natural wonders of Herzegovina. We take pride
@@ -106,6 +108,7 @@ const Footer = () => {
                 relaxing.
               </p>
               <p>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 From the moment you arrive, you'll experience our warm
                 hospitality and attention to detail. We're here to make your
                 stay in Stolac exceptional in every way.
