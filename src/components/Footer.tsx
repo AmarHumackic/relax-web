@@ -97,7 +97,7 @@ const Footer = () => {
                 At Apartment Relax Stolac, we believe that every guest deserves
                 a perfect stay. Our modern, fully-equipped apartments offer the
                 perfect blend of comfort and convenience, set against the
-                stunning backdrop of Stolac's natural beauty.
+                stunning backdrop of Stolac&apos;s natural beauty.
               </p>
               <p>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
@@ -110,8 +110,8 @@ const Footer = () => {
               <p>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 From the moment you arrive, you'll experience our warm
-                hospitality and attention to detail. We're here to make your
-                stay in Stolac exceptional in every way.
+                hospitality and attention to detail. We&apos;re here to make
+                your stay in Stolac exceptional in every way.
               </p>
             </div>
           </div>
