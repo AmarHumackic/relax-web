@@ -89,30 +89,28 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Newsletter */}
+          {/* Welcome Message */}
           <div className="lg:col-span-2">
-            <h3 className="mb-6 text-xl font-bold text-gray-900">
-              Stay Updated
-            </h3>
-            <p className="mb-6 text-base text-gray-600">
-              Subscribe to our newsletter for special offers and updates about
-              our apartments.
-            </p>
-            <form className="max-w-xl">
-              <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="focus:border-primary flex-1 rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-600 focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="bg-primary hover:bg-opacity-90 rounded-md px-6 py-2 text-white transition"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
+            <div className="space-y-4 text-gray-600">
+              <p>
+                At Apartment Relax Stolac, we believe that every guest deserves
+                a perfect stay. Our modern, fully-equipped apartments offer the
+                perfect blend of comfort and convenience, set against the
+                stunning backdrop of Stolac's natural beauty.
+              </p>
+              <p>
+                Whether you're seeking a peaceful retreat or an adventure-filled
+                holiday, our apartments provide the ideal base for exploring the
+                rich history and natural wonders of Herzegovina. We take pride
+                in ensuring your stay is memorable, comfortable, and truly
+                relaxing.
+              </p>
+              <p>
+                From the moment you arrive, you'll experience our warm
+                hospitality and attention to detail. We're here to make your
+                stay in Stolac exceptional in every way.
+              </p>
+            </div>
           </div>
         </div>
 
