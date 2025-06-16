@@ -130,7 +130,7 @@ export default function ContactPage() {
             </h3>
             <ul className="text-body-color mb-6 space-y-3 text-base">
               <li>
-                <strong>Addressss:</strong> {CONTACT.address}
+                <strong>Address:</strong> {CONTACT.address}
               </li>
               <li>
                 <strong>Phone:</strong>{" "}

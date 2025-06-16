@@ -277,7 +277,7 @@ export default function Home() {
             </span>
           </div>
           {/* CTA Book Now */}
-          <div className="mx-auto flex w-full max-w-lg flex-col gap-4 sm:max-w-md sm:flex-row">
+          <div className="mx-auto flex w-full max-w-lg flex-col gap-4 sm:max-w-md sm:flex-row md:min-w-lg">
             <a
               href="https://airbnb.com/your-listing-link"
               target="_blank"
@@ -321,7 +321,7 @@ export default function Home() {
           <div className="mx-auto mt-0 flex w-full max-w-lg justify-center">
             <a
               href="/contact"
-              className="ease-in-up shadow-btn hover:shadow-btn-hover hover:bg-primary/10 border-primary text-primary flex h-12 w-full items-center justify-center gap-2 rounded-xs border bg-white px-8 py-3.5 text-base font-medium transition duration-300 sm:w-auto"
+              className="ease-in-up shadow-btn hover:shadow-btn-hover hover:bg-primary/10 border-primary text-primary flex h-12 w-full items-center justify-center gap-2 rounded-xs border bg-white px-10 py-3.5 text-base font-medium transition duration-300 sm:w-auto"
               style={{ minWidth: "0" }}
             >
               <span className="whitespace-nowrap">Contact Us Directly</span>
