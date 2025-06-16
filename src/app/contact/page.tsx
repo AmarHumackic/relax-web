@@ -285,6 +285,7 @@ export default function ContactPage() {
                     disabled={loading}
                     minDate={new Date()}
                     className="focus:border-primary focus:ring-primary/30 w-full rounded border border-gray-200 bg-white px-4 py-2 text-black transition placeholder:text-gray-400 focus:ring-2 focus:outline-none"
+                    wrapperClassName="w-full"
                   />
                 </div>
                 <div className="w-1/2">
@@ -299,6 +300,7 @@ export default function ContactPage() {
                     disabled={loading}
                     minDate={form.checkIn}
                     className="focus:border-primary focus:ring-primary/30 w-full rounded border border-gray-200 bg-white px-4 py-2 text-black transition placeholder:text-gray-400 focus:ring-2 focus:outline-none"
+                    wrapperClassName="w-full"
                   />
                 </div>
               </div>
