@@ -19,6 +19,8 @@ const Footer = () => {
                     height="20"
                     viewBox="0 0 20 20"
                     fill="none"
+                    role="img"
+                    aria-label="Location icon"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -38,6 +40,8 @@ const Footer = () => {
                     height="20"
                     viewBox="0 0 20 20"
                     fill="none"
+                    role="img"
+                    aria-label="Phone icon"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -46,7 +50,12 @@ const Footer = () => {
                     />
                   </svg>
                 </span>
-                <span className="text-base text-gray-600">+387 61 422 877</span>
+                <a
+                  href={`tel:+387 61 422 877`}
+                  className="text-base text-gray-600 hover:underline"
+                >
+                  +387 61 422 877
+                </a>
               </li>
               <li className="flex items-center">
                 <span className="text-primary mr-3">
@@ -55,6 +64,8 @@ const Footer = () => {
                     height="20"
                     viewBox="0 0 20 20"
                     fill="none"
+                    role="img"
+                    aria-label="Email icon"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -63,9 +74,12 @@ const Footer = () => {
                     />
                   </svg>
                 </span>
-                <span className="text-base text-gray-600">
+                <a
+                  href={`mailto:relax.stolac@gmail.com`}
+                  className="text-base text-gray-600 hover:underline"
+                >
                   relax.stolac@gmail.com
-                </span>
+                </a>
               </li>
             </ul>
             {/* Social Media Links */}
@@ -120,7 +134,8 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-12 border-t border-gray-200 pt-8">
           <p className="text-center text-base text-gray-600">
-            Apartment Relax Stolac © 2025 All rights reserved
+            Apartment Relax Stolac © {new Date().getFullYear()} All rights
+            reserved
           </p>
         </div>
       </div>

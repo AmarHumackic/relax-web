@@ -38,6 +38,7 @@ export default function ContactPage() {
     message: "",
   });
   const [status, setStatus] = useState<string | null>(null);
+  const [statusText, setStatusText] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [dateError, setDateError] = useState<string | null>(null);
 
@@ -85,6 +86,7 @@ export default function ContactPage() {
     if (dateError) return;
 
     setLoading(true);
+    setStatusText(null);
     setStatus(null);
     try {
       const res = await fetch("/api/contact", {
@@ -93,9 +95,10 @@ export default function ContactPage() {
         body: JSON.stringify(form),
       });
       if (res.ok) {
-        setStatus(
+        setStatusText(
           "Thank you for your inquiry! We will get back to you within a few hours.",
         );
+        setStatus("success");
         setForm({
           fullName: "",
           email: "",
@@ -106,10 +109,12 @@ export default function ContactPage() {
           message: "",
         });
       } else {
-        setStatus("Something went wrong. Please try again later.");
+        setStatusText("Something went wrong. Please try again later.");
+        setStatus("error");
       }
     } catch {
-      setStatus("Something went wrong. Please try again later.");
+      setStatusText("Something went wrong. Please try again later.");
+      setStatus("error");
     }
     setLoading(false);
   };
@@ -250,10 +255,11 @@ export default function ContactPage() {
                   name="fullName"
                   required
                   placeholder="Enter your full name"
+                  autoCapitalize="words"
                   value={form.fullName}
                   onChange={handleChange}
                   disabled={loading}
-                  className="focus:border-primary focus:ring-primary/30 w-full rounded border border-gray-200 bg-white px-4 py-2 text-black transition placeholder:text-gray-400 focus:ring-2 focus:outline-none"
+                  className="focus:border-primary focus:ring-primary/30 w-full rounded border border-gray-200 bg-white px-4 py-2 text-black capitalize transition placeholder:text-gray-400 focus:ring-2 focus:outline-none"
                 />
               </div>
               <div>
@@ -357,6 +363,7 @@ export default function ContactPage() {
                   rows={4}
                   required
                   placeholder="Write your message or any special requests..."
+                  autoCapitalize="sentences"
                   value={form.message}
                   onChange={handleChange}
                   disabled={loading}
@@ -392,9 +399,13 @@ export default function ContactPage() {
                 )}
                 {loading ? "Sending..." : "Send Enquiry"}
               </button>
-              {status && (
-                <div className="mt-2 text-center font-medium text-green-600">
-                  {status}
+              {statusText && (
+                <div
+                  className={`mt-2 text-center font-medium text-${
+                    status === "success" ? "green-600" : "red-600"
+                  }`}
+                >
+                  {statusText}
                 </div>
               )}
             </form>
