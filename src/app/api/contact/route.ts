@@ -21,13 +21,13 @@ export async function POST(req: NextRequest) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "relax.contact.stolac@gmail.com",
-      pass: process.env.GMAIL_APP_PASSWORD,
+      user: process.env.CONTACT_GMAIL_USER,
+      pass: process.env.CONTACT_GMAIL_APP_PASSWORD,
     },
   });
 
   const mailOptions = {
-    from: "Relax Contact <relax.contact.stolac@gmail.com>",
+    from: `Relax Contact <${process.env.CONTACT_GMAIL_USER}>`,
     to: "relax.stolac@gmail.com",
     subject: `New Booking Enquiry from ${fullName}`,
     text: `Name: ${fullName}\nEmail: ${email}\nDates: ${format(checkIn, "EEEE, d MMMM yyyy")} - ${format(checkOut, "EEEE, d MMMM yyyy")}\nApartment: ${apartment}\nNumber of Persons: ${numOfPersons}\nMessage: ${message}`,
