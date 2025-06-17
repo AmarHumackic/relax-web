@@ -34,7 +34,7 @@ export default function ContactPage() {
     checkIn: new Date(),
     checkOut: new Date(new Date().setDate(new Date().getDate() + 1)), // Default to tomorrow
     apartment: "upper",
-    persons: 1,
+    numOfPersons: 1,
     message: "",
   });
   const [status, setStatus] = useState<string | null>(null);
@@ -50,7 +50,7 @@ export default function ContactPage() {
     const { name, value } = e.target;
     setForm((prev) => ({
       ...prev,
-      [name]: name === "persons" ? Number(value) : value,
+      [name]: name === "numOfPersons" ? Number(value) : value,
     }));
   };
 
@@ -75,10 +75,10 @@ export default function ContactPage() {
     });
   };
 
-  // Reset persons if apartment changes
+  // Reset numOfPersons if apartment changes
   const handleApartmentChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value;
-    setForm((prev) => ({ ...prev, apartment: value, persons: 1 }));
+    setForm((prev) => ({ ...prev, apartment: value, numOfPersons: 1 }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -96,7 +96,7 @@ export default function ContactPage() {
       });
       if (res.ok) {
         setStatusText(
-          "Thank you for your inquiry! We will get back to you within a few hours.",
+          "Thank you for your enquiry! We will get back to you within a few hours.",
         );
         setStatus("success");
         setForm({
@@ -105,7 +105,7 @@ export default function ContactPage() {
           checkIn: new Date(),
           checkOut: new Date(new Date().setDate(new Date().getDate() + 1)),
           apartment: "upper",
-          persons: 1,
+          numOfPersons: 1,
           message: "",
         });
       } else {
@@ -333,13 +333,16 @@ export default function ContactPage() {
                 </select>
               </div>
               <div>
-                <label htmlFor="persons" className="mb-1 block font-medium">
+                <label
+                  htmlFor="numOfPersons"
+                  className="mb-1 block font-medium"
+                >
                   Number of Persons
                 </label>
                 <select
-                  id="persons"
-                  name="persons"
-                  value={form.persons}
+                  id="numOfPersons"
+                  name="numOfPersons"
+                  value={form.numOfPersons}
                   onChange={handleChange}
                   disabled={loading}
                   className="focus:border-primary focus:ring-primary/30 w-full rounded border border-gray-200 bg-white px-4 py-2 text-black transition focus:ring-2 focus:outline-none"

@@ -1,10 +1,19 @@
+import { format } from "date-fns";
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
-  const { name, email, message, dates } = await req.json();
+  const {
+    fullName,
+    email,
+    checkIn,
+    checkOut,
+    apartment,
+    numOfPersons,
+    message,
+  } = await req.json();
 
-  if (!name || !email || !message) {
+  if (!fullName || !email) {
     return NextResponse.json({ error: "Missing fields" }, { status: 400 });
   }
 
@@ -12,16 +21,16 @@ export async function POST(req: NextRequest) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "relax.stolac@gmail.com",
-      pass: process.env.GMAIL_APP_PASSWORD, // Removed for now - set again later with new email
+      user: "relax.contact.stolac@gmail.com",
+      pass: process.env.GMAIL_APP_PASSWORD,
     },
   });
 
   const mailOptions = {
-    from: "Relax Stolac <relax.stolac@gmail.com>",
+    from: "Relax Contact <relax.contact.stolac@gmail.com>",
     to: "relax.stolac@gmail.com",
-    subject: `New Booking Inquiry from ${name}`,
-    text: `Name: ${name}\nEmail: ${email}\nDates: ${dates}\nMessage: ${message}`,
+    subject: `New Booking Enquiry from ${fullName}`,
+    text: `Name: ${fullName}\nEmail: ${email}\nDates: ${format(checkIn, "EEEE, d MMMM yyyy")} - ${format(checkOut, "EEEE, d MMMM yyyy")}\nApartment: ${apartment}\nNumber of Persons: ${numOfPersons}\nMessage: ${message}`,
     replyTo: email,
   };
 
