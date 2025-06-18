@@ -234,7 +234,7 @@ export default function Home() {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/all/1.webp"
+            src="/images/gallery/all/1.webp"
             alt="Hero background image"
             fill
             className="h-full w-full object-cover opacity-70 blur-xs"
