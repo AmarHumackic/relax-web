@@ -237,7 +237,7 @@ export default function Home() {
             src="/images/1.webp"
             alt="Hero background image"
             fill
-            className="h-full w-full object-cover opacity-60 blur-xs"
+            className="h-full w-full object-cover opacity-70 blur-xs"
             priority
           />
           {/* White overlay for readability */}
