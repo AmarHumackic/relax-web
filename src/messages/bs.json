@@ -1,0 +1,26 @@
+{
+  "home": {
+    "title": "BS Home",
+    "description": "BS Home page"
+  },
+  "amenities": {
+    "title": "BS Amenities",
+    "description": "BS Amenities page"
+  },
+  "gallery": {
+    "title": "BS Gallery",
+    "description": "BS Gallery page"
+  },
+  "contact": {
+    "title": "BS Contact",
+    "description": "BS Contact page"
+  },
+  "header": {
+    "title": "BS Header",
+    "description": "BS Header page"
+  },
+  "footer": {
+    "title": "BS Footer",
+    "description": "BS Footer page"
+  }
+}

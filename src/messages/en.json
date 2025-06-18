@@ -1,0 +1,165 @@
+{
+  "home": {
+    "hero": {
+      "title": "Relax Apartments",
+      "subtitle": "Enjoy your stay in Stolac, Bosnia and Herzegovina!",
+      "description": "Relax Apartments offers two comfortable and modern apartments with a spacious terrace, private parking, and a rose-filled garden. Ideally located in the city center, perfect for exploring Herzegovina and relaxing in a peaceful setting with views of the Old Town fortress.",
+      "instantReservation": "Instant reservation",
+      "bookOnBooking": "Book on Booking.com",
+      "bookOnAirbnb": "Book on Airbnb",
+      "or": "or",
+      "contactUsDirectly": "Contact Us Directly"
+    },
+    "apartments": {
+      "groundLevel": {
+        "title": "Ground Level Apartment (2 bedrooms)",
+        "description": "Nestled on the ground floor, this cozy apartment boasts views of our lush garden filled with vibrant roses. Enjoy the private patio surrounded by fragrant blooms after a day of exploring the city. Located in the city of Stolac, our spot offers easy access to attractions. Enjoy a hassle-free stay with our free private parking.",
+        "rooms": {
+          "0": "2 bedrooms",
+          "1": "1 living room",
+          "2": "1 bathroom (bathtub or shower)",
+          "3": "6 beds",
+          "4": "Flower garden",
+          "5": "Air conditioning, WiFi, TV, washing machine"
+        },
+        "amenitiesIcons": {
+          "parking": "Private parking",
+          "courtyard": "Paved courtyard",
+          "garden": "Flower garden",
+          "washingMachine": "Washing machine",
+          "wifi": "WiFi",
+          "airConditioning": "Air conditioning",
+          "tv": "TV"
+        }
+      },
+      "upperLevel": {
+        "title": "Upper Level Apartment (3 bedrooms)",
+        "description": "Situated on the upper floor, this bright and comfortable apartment offers peace and privacy in a quiet neighborhood with friendly locals. It features a private parking spot, a large balcony ideal for relaxing, and stunning views of the surrounding hills and gardens. The interior includes a fully equipped kitchen, a cozy living area, and multiple sleeping arrangements perfect for families or groups.",
+        "rooms": {
+          "0": "3 bedrooms",
+          "1": "1 living room",
+          "2": "1 bathroom (bathtub)",
+          "3": "7 beds",
+          "4": "Spacious Terrace",
+          "5": "Air conditioning, WiFi, TV, washing machine"
+        },
+        "amenitiesIcons": {
+          "parking": "Private parking",
+          "terrace": "Spacious Terrace",
+          "garden": "Flower garden",
+          "washingMachine": "Washing machine",
+          "wifi": "WiFi",
+          "airConditioning": "Air conditioning",
+          "tv": "TV"
+        }
+      }
+    },
+    "location": {
+      "title": "Location",
+      "description": "We are located in a quiet area, just a 3-minute walk from the city center. Perfect for relaxing, yet close to everything you need!"
+    },
+    "reviews": {
+      "title": "Reviews",
+      "description": "What our guests say about us",
+      "list": [
+        {
+          "name": "Deborah",
+          "country": "United Kingdom",
+          "rating": 10,
+          "comment": "Liked everything, hosts were amazing, beds comfortable and great location. If you are looking to book a place in Stolac, make it here :)"
+        },
+        {
+          "name": "Dainoras",
+          "country": "Lithuania",
+          "rating": 10,
+          "comment": "The hosts are super kind and the location is not too far from Mostar, the rooms are perfect, highly recommend, especially if you are with a larger group"
+        },
+        {
+          "name": "Belma",
+          "country": "Slovakia",
+          "rating": 10,
+          "comment": "Ideal location for Stolac, very friendly hosts, air-conditioned, washing machine, there was even coffee, shamp... We were sorry to leave the apartment after 3 nights. By the way, we kayaked on Bregava, passed the Istup canyon, visited the fortress above the town and sights in the town itself, Daorson, the old church... Everything really beautiful."
+        },
+        {
+          "name": "Mehmed",
+          "country": "Bosnia and Herzegovina",
+          "rating": 10,
+          "comment": "Everything was good.I really was satisfied."
+        },
+        {
+          "name": "Jane",
+          "country": "United States",
+          "rating": 10,
+          "comment": "This was such a wonderfully suited place to enjoy the area. Everything was clean and comfortable- we loved it!"
+        },
+        {
+          "name": "Marko",
+          "country": "Slovenia",
+          "rating": 10,
+          "comment": "Friendly hosts, a good location, clean and a good value for money."
+        },
+        {
+          "name": "Julia",
+          "country": "Belgium",
+          "rating": 10,
+          "comment": "Everything was perfect. Very clean apartments, covered terraces with a view of the mountains. Kitchen utensils provided and close to the town center. Perfect for a family stay."
+        },
+        {
+          "name": "Dagmara",
+          "country": "Poland",
+          "rating": 10,
+          "comment": "Very nice, helpful host, perfectly clean and well-equipped new apartment. Safe parking on the premises. Very nice area, nearby atmospheric pub with traditional food at affordable prices."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "list": [
+      {
+        "question": "What is the check-in and check-out time?",
+        "answer": "The check-in time is from 1:00 PM, and the check-out time is until 10:30 AM. Flexible by arrangement if possible."
+      },
+      {
+        "question": "Is there a parking space?",
+        "answer": "Yes, there is a free private parking space for each apartment."
+      },
+      {
+        "question": "Are pets allowed?",
+        "answer": "No, pets are not allowed."
+      },
+      {
+        "question": "Is there a washing machine?",
+        "answer": "Yes, both apartments have a washing machine."
+      },
+      {
+        "question": "Is there WiFi and air conditioning?",
+        "answer": "Yes, both apartments have free WiFi and air conditioning."
+      },
+      {
+        "question": "Are parties allowed?",
+        "answer": "No, parties/events are not allowed."
+      }
+    ]
+  },
+  "amenities": {
+    "title": " Amenities",
+    "description": " Amenities page"
+  },
+  "gallery": {
+    "title": " Gallery",
+    "description": " Gallery page"
+  },
+  "contact": {
+    "title": " Contact",
+    "description": " Contact page"
+  },
+  "header": {
+    "title": " Header",
+    "description": " Header page"
+  },
+  "footer": {
+    "title": " Footer",
+    "description": " Footer page"
+  }
+}
