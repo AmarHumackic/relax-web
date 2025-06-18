@@ -59,8 +59,7 @@
       "description": "We are located in a quiet area, just a 3-minute walk from the city center. Perfect for relaxing, yet close to everything you need!"
     },
     "reviews": {
-      "title": "Reviews",
-      "description": "What our guests say about us",
+      "title": "What our guests say",
       "list": [
         {
           "name": "Deborah",

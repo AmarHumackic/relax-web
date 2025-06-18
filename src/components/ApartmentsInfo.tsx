@@ -7,7 +7,7 @@ export default function ApartmentsInfo() {
 
   return (
     <section className="bg-gray-50 py-6 md:py-12">
-      <div className="container mx-auto grid gap-8 md:grid-cols-2">
+      <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-0">
         {/* Ground Level Apartment */}
         <div className="flex flex-col justify-between rounded-xl bg-white p-8 shadow-md">
           <h2 className="text-primary mb-2 text-2xl font-bold">
@@ -20,20 +20,23 @@ export default function ApartmentsInfo() {
             ))}
           </ul>
           {/* Amenities icons */}
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex flex-wrap gap-4 lg:flex-nowrap">
             {Object.entries(tGroundLevel.raw("amenitiesIcons")).map(
               ([key, value]: [string, string]) => (
                 <div
                   key={key}
-                  className="flex min-w-[70px] flex-col items-center text-center"
+                  className="flex max-w-[80px] min-w-[50px] flex-col items-center text-center lg:max-w-[100px]"
                 >
                   <AmenityIcon icon={key} />
-                  <span className="mt-1 text-xs text-gray-600">{value}</span>
+                  <span className="mt-1 block text-xs break-words text-gray-600">
+                    {value}
+                  </span>
                 </div>
               ),
             )}
           </div>
         </div>
+
         {/* Upper Level Apartment */}
         <div className="flex flex-col justify-between rounded-xl bg-white p-8 shadow-md">
           <h2 className="text-primary mb-2 text-2xl font-bold">
@@ -46,15 +49,17 @@ export default function ApartmentsInfo() {
             ))}
           </ul>
           {/* Amenities icons */}
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex flex-wrap gap-4 lg:flex-nowrap">
             {Object.entries(tUpperLevel.raw("amenitiesIcons")).map(
               ([key, value]: [string, string]) => (
                 <div
                   key={key}
-                  className="flex min-w-[70px] flex-col items-center text-center"
+                  className="flex max-w-[80px] min-w-[50px] flex-col items-center text-center lg:max-w-[100px]"
                 >
                   <AmenityIcon icon={key} />
-                  <span className="mt-1 text-xs text-gray-600">{value}</span>
+                  <span className="mt-1 block text-xs break-words text-gray-600">
+                    {value}
+                  </span>
                 </div>
               ),
             )}
