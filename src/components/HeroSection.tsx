@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Link } from "@/i18n/navigation";
 
 export default function HeroSection() {
   const tHero = useTranslations("home.hero");
@@ -79,7 +80,7 @@ export default function HeroSection() {
         </div>
         {/* Contact Us Directly button below booking buttons */}
         <div className="mx-auto mt-0 flex w-full max-w-lg justify-center">
-          <a
+          <Link
             href="/contact"
             className="ease-in-up shadow-btn hover:shadow-btn-hover hover:bg-primary/10 border-primary text-primary flex h-12 w-full items-center justify-center gap-2 rounded-xs border bg-white px-10 py-3.5 text-base font-medium transition duration-300 sm:w-auto"
             style={{ minWidth: "0" }}
@@ -87,7 +88,7 @@ export default function HeroSection() {
             <span className="whitespace-nowrap">
               {tHero("contactUsDirectly")}
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
