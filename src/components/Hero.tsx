@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 
-export default function HeroSection() {
+export default function Hero() {
   const tHero = useTranslations("home.hero");
 
   return (
