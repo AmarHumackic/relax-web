@@ -171,6 +171,62 @@
       "shuttleService": "Shuttle service"
     }
   },
+  "cityAttractions": {
+    "title": "Stolac Attractions",
+    "attractions": {
+      "oldTown": {
+        "title": "Vidoški Fortress",
+        "description": "Vidoški, first mentioned in 1444, was a major medieval town in Herzegovina, strategically located and fortified with 13 towers."
+      },
+      "necropolisRadimlja": {
+        "title": "Necropolis Radimlja",
+        "description": "UNESCO necropolises near Stolac, like Radimlja and Boljuni, date to the 13th–16th century and are tied to legends, healing rituals, and local traditions."
+      },
+      "daorson": {
+        "title": "Daorson Illyrian City",
+        "description": "Daorson, ancient city of the Daorsi, flourished in the 3rd–2nd c. BC. Fortified with Cyclopean walls, it was destroyed around 50 BC and never rebuilt."
+      },
+      "badanjCave": {
+        "title": "Paleolithic Cave Badanj",
+        "description": "Badanj Cave near Stolac holds Bosnia’s oldest art—an engraved horse from 13,000 BC. A key Palaeolithic site, it shows traces of seasonal human life."
+      },
+      "bregava": {
+        "title": "River Bregava",
+        "description": "Historic mills and the unique Ćuprija bridge with uneven arches stand along Bregava river in Stolac, where locals also swim and relax."
+      },
+      "cuprijaBridge": {
+        "title": "Ćuprija Bridge",
+        "description": "Ćuprija bridge, possibly medieval, stands in Stolac with irregular arches built out of spite in the 17th century—giving it the nickname \"Spite Bridge\"."
+      },
+      "saraBridge": {
+        "title": "Sara's Bridge",
+        "description": "Built in 1896, Sara Kašiković’s Girls’ Bridge on the Bregava river honors a tragic love story; Stolac’s Austro-Hungarian era shaped its historic architecture."
+      },
+      "sultanSelimMosque": {
+        "title": "Sultan Selim Mosque"
+      },
+      "catholicChurch": {
+        "title": "St. Elijah Church",
+        "description": "The Catholic Church of St. Elijah in Stolac offers a serene place of worship and showcases the town’s rich spiritual and cultural heritage."
+      },
+      "orthodoxChurch": {
+        "title": "St. Peter and Paul Church",
+        "description": "The 1505 Orthodox Church of St. Peter & Paul in Ošanjići honors duke Radosav Hrabren, whose judge chairs symbolize Stolac’s feudal heritage and power."
+      },
+      "tekke": {
+        "title": "Naqshbandi Tekke",
+        "description": "Stolac Tekke is a spiritual and cultural center on the Bregava River, showcasing rich Sufi heritage and distinctive Ottoman-era architecture."
+      },
+      "makHouse": {
+        "title": "Mak House",
+        "description": "Mak Dizdar, a great Bosnian poet born in Stolac, is honored by the Mak House museum and Foundation, celebrating his life, work, and medieval stećak art."
+      },
+      "waterFountains": {
+        "title": "Water Fountains",
+        "description": "Stolac’s water heritage spans ancient stone reservoirs, Ottoman fountains, and the first 1908 water supply, with many public fountains still refreshing locals today."
+      }
+    }
+  },
   "gallery": {
     "title": " Gallery",
     "description": " Gallery page"
