@@ -246,6 +246,31 @@
       "all": "All",
       "groundLevel": "Ground Level Apartment",
       "upperLevel": "Upper Level Apartment"
+    },
+    "descriptions": {
+      "exteriorView": "Exterior View",
+      "exteriorViewBalcony": "Exterior View Balcony",
+      "exteriorViewNamePlate": "Exterior View Name Plate",
+      "exteriorViewGarden": "Exterior View Garden",
+      "exteriorViewOutdoorSink": "Exterior View Outdoor Sink",
+      "groundLevelApartmentGarden": "Ground Level Apartment Garden",
+      "groundLevelApartmentCourtyard": "Ground Level Apartment Courtyard",
+      "groundLevelApartmentCourtyardSwing": "Ground Level Apartment Courtyard Swing",
+      "groundLevelApartmentLivingRoom": "Ground Level Apartment Living Room",
+      "groundLevelApartmentKitchen": "Ground Level Apartment Kitchen",
+      "groundLevelApartmentBedroomSingleBeds": "Ground Level Apartment Bedroom Single Beds",
+      "groundLevelApartmentBedroomDoubleBed": "Ground Level Apartment Bedroom Double Bed",
+      "groundLevelApartmentBathroom": "Ground Level Apartment Bathroom",
+      "groundLevelApartmentHallway": "Ground Level Apartment Hallway",
+      "upperLevelApartmentSpaciousTerrace": "Upper Level Apartment Spacious Terrace",
+      "upperLevelApartmentSpaciousTerraceSeatingArea": "Upper Level Apartment Spacious Terrace Seating Area",
+      "upperLevelApartmentSpaciousTerraceSwing": "Upper Level Apartment Spacious Terrace Swing",
+      "upperLevelApartmentLivingRoom": "Upper Level Apartment Living Room",
+      "upperLevelApartmentKitchen": "Upper Level Apartment Kitchen",
+      "upperLevelApartmentBedroomDoubleBed": "Upper Level Apartment Bedroom Double Bed",
+      "upperLevelApartmentBedroomSingleBeds": "Upper Level Apartment Bedroom Single Beds",
+      "upperLevelApartmentBathroom": "Upper Level Apartment Bathroom",
+      "upperLevelApartmentExteriorLights": "Upper Level Apartment Exterior Lights"
     }
   },
   "contact": {

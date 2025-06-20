@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-export default function Home() {
+export default function HomePage() {
   const t = useTranslations("home");
   return (
     <main>
