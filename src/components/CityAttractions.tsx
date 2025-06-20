@@ -33,6 +33,23 @@ export default function CityAttractions() {
       image: "/images/cityAttractions/bregava.webp",
     },
     {
+      title: tCityAttractions("attractions.provalijeWaterfall.title"),
+      description: tCityAttractions(
+        "attractions.provalijeWaterfall.description",
+      ),
+      image: "/images/cityAttractions/provalijeWaterfall.webp",
+    },
+    {
+      title: tCityAttractions("attractions.pjeneWaterfall.title"),
+      description: tCityAttractions("attractions.pjeneWaterfall.description"),
+      image: "/images/cityAttractions/pjeneWaterfall.webp",
+    },
+    {
+      title: tCityAttractions("attractions.riverMills.title"),
+      description: tCityAttractions("attractions.riverMills.description"),
+      image: "/images/cityAttractions/riverMills.webp",
+    },
+    {
       title: tCityAttractions("attractions.cuprijaBridge.title"),
       description: tCityAttractions("attractions.cuprijaBridge.description"),
       image: "/images/cityAttractions/cuprijaBridge.webp",

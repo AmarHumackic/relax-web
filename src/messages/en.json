@@ -194,6 +194,18 @@
         "title": "River Bregava",
         "description": "Historic mills and the unique Ćuprija bridge with uneven arches stand along Bregava river in Stolac, where locals also swim and relax."
       },
+      "provalijeWaterfall": {
+        "title": "Provalije Waterfall",
+        "description": "Where town meets nature—Provalije Waterfall cascades through Stolac’s old quarter, earning it the nickname “Stolac’s Niagara."
+      },
+      "pjeneWaterfall": {
+        "title": "Pjene Waterfall",
+        "description": "Discover the hidden beauty of Pjene Waterfalls in Stolac—where nature's calm meets cascading waters in a perfect setting for peaceful escapes."
+      },
+      "riverMills": {
+        "title": "River Mills Heritage",
+        "description": "Historic mills and fulling houses along the Bregava River shaped Stolac’s economy from the 15th century, with 12 sites still preserved today."
+      },
       "cuprijaBridge": {
         "title": "Ćuprija Bridge",
         "description": "Ćuprija bridge, possibly medieval, stands in Stolac with irregular arches built out of spite in the 17th century—giving it the nickname \"Spite Bridge\"."
@@ -229,8 +241,12 @@
     }
   },
   "gallery": {
-    "title": " Gallery",
-    "description": " Gallery page"
+    "title": "Photo Gallery",
+    "tabs": {
+      "all": "All",
+      "groundLevel": "Ground Level Apartment",
+      "upperLevel": "Upper Level Apartment"
+    }
   },
   "contact": {
     "title": " Contact",
