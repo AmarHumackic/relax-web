@@ -1,4 +1,4 @@
 export const MAX_PERSONS = {
-  ground: 7,
-  upper: 8,
+  groundLevel: 7,
+  upperLevel: 8,
 };

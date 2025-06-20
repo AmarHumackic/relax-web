@@ -1,16 +1,19 @@
 "use client";
 
 import { MAX_PERSONS } from "@/constants/apartments";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 
 export default function ContactForm() {
+  const tContactForm = useTranslations("contact.contactForm");
+  const tCommon = useTranslations("common");
   const [form, setForm] = useState({
     fullName: "",
     email: "",
     checkIn: new Date(),
     checkOut: new Date(new Date().setDate(new Date().getDate() + 1)), // Default to tomorrow
-    apartment: "upper",
+    apartment: "groundLevel",
     numOfPersons: 1,
     message: "",
   });
@@ -20,8 +23,8 @@ export default function ContactForm() {
   const [dateError, setDateError] = useState<string | null>(null);
 
   const APARTMENTS = [
-    { label: "Ground Level", value: "ground" },
-    { label: "Upper Level", value: "upper" },
+    { key: "groundLevel", name: tCommon("tabs.groundLevel") },
+    { key: "upperLevel", name: tCommon("tabs.upperLevel") },
   ];
 
   const handleChange = (
@@ -49,7 +52,7 @@ export default function ContactForm() {
   const handleCheckOutChange = (date: Date) => {
     setForm((prev) => {
       if (date < prev.checkIn) {
-        setDateError("Check-out date cannot be before check-in date");
+        setDateError(tContactForm("dateError"));
         return prev;
       }
       setDateError(null);
@@ -78,25 +81,23 @@ export default function ContactForm() {
         body: JSON.stringify(form),
       });
       if (res.ok) {
-        setStatusText(
-          "Thank you for your enquiry! We will get back to you within a few hours.",
-        );
+        setStatusText(tContactForm("enquirySuccess"));
         setStatus("success");
         setForm({
           fullName: "",
           email: "",
           checkIn: new Date(),
           checkOut: new Date(new Date().setDate(new Date().getDate() + 1)),
-          apartment: "upper",
+          apartment: "groundLevel",
           numOfPersons: 1,
           message: "",
         });
       } else {
-        setStatusText("Something went wrong. Please try again later.");
+        setStatusText(tContactForm("enquiryError"));
         setStatus("error");
       }
     } catch {
-      setStatusText("Something went wrong. Please try again later.");
+      setStatusText(tContactForm("enquiryError"));
       setStatus("error");
     }
     setLoading(false);
@@ -107,20 +108,19 @@ export default function ContactForm() {
   return (
     <section className="shadow-three rounded-2xl bg-white p-8">
       <p className="text-body-color mb-8 rounded-lg border border-gray-100 bg-gray-50 p-4 text-center text-base">
-        Use the form below to contact us about your stay. We will get back to
-        you within a few hours with all the details you need!
+        {tContactForm("title")}
       </p>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
           <label htmlFor="fullName" className="mb-1 block font-medium">
-            Full Name
+            {tContactForm("fullName")}
           </label>
           <input
             type="text"
             id="fullName"
             name="fullName"
             required
-            placeholder="Enter your full name"
+            placeholder={tContactForm("fullNamePlaceholder")}
             autoCapitalize="words"
             value={form.fullName}
             onChange={handleChange}
@@ -130,14 +130,14 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="email" className="mb-1 block font-medium">
-            Email
+            {tContactForm("email")}
           </label>
           <input
             type="email"
             id="email"
             name="email"
             required
-            placeholder="Enter your email address"
+            placeholder={tContactForm("emailPlaceholder")}
             value={form.email}
             onChange={handleChange}
             disabled={loading}
@@ -147,13 +147,13 @@ export default function ContactForm() {
         <div className="flex w-full gap-2">
           <div className="w-1/2">
             <label htmlFor="checkIn" className="mb-1 block font-medium">
-              Check In
+              {tContactForm("checkIn")}
             </label>
             <DatePicker
               selected={form.checkIn}
               onChange={handleCheckInChange}
               dateFormat="MMMM d, yyyy"
-              placeholderText="Select check-in date"
+              placeholderText={tContactForm("checkInPlaceholder")}
               disabled={loading}
               minDate={new Date()}
               className="focus:border-primary focus:ring-primary/30 w-full rounded border border-gray-200 bg-white px-4 py-2 text-black transition placeholder:text-gray-400 focus:ring-2 focus:outline-none"
@@ -162,13 +162,13 @@ export default function ContactForm() {
           </div>
           <div className="w-1/2">
             <label htmlFor="checkOut" className="mb-1 block font-medium">
-              Check Out
+              {tContactForm("checkOut")}
             </label>
             <DatePicker
               selected={form.checkOut}
               onChange={handleCheckOutChange}
               dateFormat="MMMM d, yyyy"
-              placeholderText="Select check-out date"
+              placeholderText={tContactForm("checkOutPlaceholder")}
               disabled={loading}
               minDate={form.checkIn}
               className="focus:border-primary focus:ring-primary/30 w-full rounded border border-gray-200 bg-white px-4 py-2 text-black transition placeholder:text-gray-400 focus:ring-2 focus:outline-none"
@@ -181,7 +181,7 @@ export default function ContactForm() {
         )}
         <div>
           <label htmlFor="apartment" className="mb-1 block font-medium">
-            Apartment
+            {tContactForm("apartment")}
           </label>
           <select
             id="apartment"
@@ -191,16 +191,16 @@ export default function ContactForm() {
             disabled={loading}
             className="focus:border-primary focus:ring-primary/30 w-full rounded border border-gray-200 bg-white px-4 py-2 text-black transition focus:ring-2 focus:outline-none"
           >
-            {APARTMENTS.map((apt) => (
-              <option key={apt.value} value={apt.value}>
-                {apt.label}
+            {APARTMENTS.map(({ key, name }) => (
+              <option key={key} value={key}>
+                {name}
               </option>
             ))}
           </select>
         </div>
         <div>
           <label htmlFor="numOfPersons" className="mb-1 block font-medium">
-            Number of Persons
+            {tContactForm("numOfPersons")}
           </label>
           <select
             id="numOfPersons"
@@ -219,14 +219,14 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="message" className="mb-1 block font-medium">
-            Message
+            {tContactForm("message")}
           </label>
           <textarea
             id="message"
             name="message"
             rows={4}
             required
-            placeholder="Write your message or any special requests..."
+            placeholder={tContactForm("messagePlaceholder")}
             autoCapitalize="sentences"
             value={form.message}
             onChange={handleChange}
@@ -236,7 +236,7 @@ export default function ContactForm() {
         </div>
         <button
           type="submit"
-          className="bg-primary shadow-submit hover:bg-primary/90 flex w-full items-center justify-center gap-2 rounded px-6 py-3 font-medium text-white transition disabled:opacity-60"
+          className="bg-primary shadow-submit hover:bg-primary/90 flex w-full cursor-pointer items-center justify-center gap-2 rounded px-6 py-3 font-medium text-white transition disabled:opacity-60"
           disabled={loading || !!dateError}
         >
           {loading && (
@@ -261,7 +261,7 @@ export default function ContactForm() {
               ></path>
             </svg>
           )}
-          {loading ? "Sending..." : "Send Enquiry"}
+          {loading ? tContactForm("sending") : tContactForm("sendEnquiry")}
         </button>
         {statusText && (
           <div

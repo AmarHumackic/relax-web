@@ -7,14 +7,15 @@ import { useTranslations } from "next-intl";
 
 const PhotoGallery = () => {
   const tGallery = useTranslations("gallery");
+  const tCommon = useTranslations("common");
   const [activeTab, setActiveTab] = useState("all");
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
   const categories = [
-    { key: "all", name: tGallery("tabs.all") },
-    { key: "groundLevel", name: tGallery("tabs.groundLevel") },
-    { key: "upperLevel", name: tGallery("tabs.upperLevel") },
+    { key: "all", name: tCommon("tabs.all") },
+    { key: "groundLevel", name: tCommon("tabs.groundLevel") },
+    { key: "upperLevel", name: tCommon("tabs.upperLevel") },
   ];
 
   const { filteredImages, slides } = useMemo(() => {

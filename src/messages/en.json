@@ -3,12 +3,7 @@
     "hero": {
       "title": "Relax Apartments",
       "subtitle": "Enjoy your stay in Stolac, Bosnia and Herzegovina!",
-      "description": "Relax Apartments offers two comfortable and modern apartments with a spacious terrace, private parking, and a rose-filled garden. Ideally located in the city center, perfect for exploring Herzegovina and relaxing in a peaceful setting with views of the Old Town fortress.",
-      "instantReservation": "Instant reservation",
-      "bookOnBooking": "Book on Booking.com",
-      "bookOnAirbnb": "Book on Airbnb",
-      "or": "or",
-      "contactUsDirectly": "Contact Us Directly"
+      "description": "Relax Apartments offers two comfortable and modern apartments with a spacious terrace, private parking, and a rose-filled garden. Ideally located in the city center, perfect for exploring Herzegovina and relaxing in a peaceful setting with views of the Old Town fortress."
     },
     "apartments": {
       "groundLevel": {
@@ -21,15 +16,6 @@
           "3": "6 beds",
           "4": "Flower garden",
           "5": "Air conditioning, WiFi, TV, washing machine"
-        },
-        "amenitiesIcons": {
-          "parking": "Private parking",
-          "courtyard": "Paved courtyard",
-          "garden": "Flower garden",
-          "washingMachine": "Washing machine",
-          "wifi": "WiFi",
-          "airConditioning": "Air conditioning",
-          "tv": "TV"
         }
       },
       "upperLevel": {
@@ -42,15 +28,6 @@
           "3": "7 beds",
           "4": "Spacious Terrace",
           "5": "Air conditioning, WiFi, TV, washing machine"
-        },
-        "amenitiesIcons": {
-          "parking": "Private parking",
-          "terrace": "Spacious Terrace",
-          "garden": "Flower garden",
-          "washingMachine": "Washing machine",
-          "wifi": "WiFi",
-          "airConditioning": "Air conditioning",
-          "tv": "TV"
         }
       }
     },
@@ -142,34 +119,7 @@
     }
   },
   "amenities": {
-    "title": "Apartments Amenities",
-    "tabs": {
-      "all": "All",
-      "groundLevel": "Ground Level Apartment",
-      "upperLevel": "Upper Level Apartment"
-    },
-    "amenitiesIcons": {
-      "parking": "Private parking",
-      "courtyard": "Paved courtyard",
-      "terrace": "Spacious Terrace",
-      "garden": "Flower garden",
-      "washingMachine": "Washing machine",
-      "mosquitoNets": "Mosquito nets",
-      "wifi": "WiFi",
-      "airConditioning": "Air conditioning",
-      "tv": "Flat-screen TV",
-      "kitchen": "Fully Equipped Kitchen",
-      "balcony": "Private Balcony",
-      "privateBathroom": "Private Bathroom",
-      "view": "Mountain View",
-      "safeBox": "Safe box",
-      "smokeAlarm": "Smoke alarm",
-      "selfCheckIn": "Self check-in",
-      "lockBox": "Lockbox",
-      "outdoorHangingSwing": "Outdoor hanging swing",
-      "outdoorDiningArea": "Outdoor dining area",
-      "shuttleService": "Shuttle service"
-    }
+    "title": "Apartments Amenities"
   },
   "cityAttractions": {
     "title": "Stolac Attractions",
@@ -242,11 +192,6 @@
   },
   "gallery": {
     "title": "Photo Gallery",
-    "tabs": {
-      "all": "All",
-      "groundLevel": "Ground Level Apartment",
-      "upperLevel": "Upper Level Apartment"
-    },
     "descriptions": {
       "exteriorView": "Exterior View",
       "exteriorViewBalcony": "Exterior View Balcony",
@@ -274,8 +219,37 @@
     }
   },
   "contact": {
-    "title": " Contact",
-    "description": " Contact page"
+    "title": "Want to Book Your Stay?",
+    "contactInfo": {
+      "contactInformation": "Contact Information",
+      "address": "Address",
+      "addressValue": "Lazara Lazarevića 27, Stolac, Bosnia and Herzegovina",
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "googleMaps": "Google Maps",
+      "appleMaps": "Apple Maps"
+    },
+    "contactForm": {
+      "title": "Use the form below to contact us about your stay. We will get back to you within a few hours with all the details you need!",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email address",
+      "checkIn": "Check-in",
+      "checkInPlaceholder": "Select check-in date",
+      "checkOut": "Check-out",
+      "checkOutPlaceholder": "Select check-out date",
+      "apartment": "Apartment",
+      "numOfPersons": "Number of Persons",
+      "message": "Message",
+      "messagePlaceholder": "Write your message or any special requests...",
+      "sending": "Sending...",
+      "sendEnquiry": "Send Enquiry",
+      "dateError": "Check-out date cannot be before check-in date",
+      "enquirySuccess": "Thank you for your enquiry! We will get back to you within a few hours.",
+      "enquiryError": "Something went wrong. Please try again later."
+    }
   },
   "header": {
     "title": " Header",
@@ -284,5 +258,39 @@
   "footer": {
     "title": " Footer",
     "description": " Footer page"
+  },
+  "common": {
+    "instantReservation": "Instant reservation",
+    "bookOnBooking": "Book on Booking.com",
+    "bookOnAirbnb": "Book on Airbnb",
+    "or": "or",
+    "contactUsDirectly": "Contact Us Directly",
+    "amenitiesIcons": {
+      "parking": "Private parking",
+      "courtyard": "Paved courtyard",
+      "terrace": "Spacious Terrace",
+      "garden": "Flower garden",
+      "washingMachine": "Washing machine",
+      "mosquitoNets": "Mosquito nets",
+      "wifi": "WiFi",
+      "airConditioning": "Air conditioning",
+      "tv": "Flat-screen TV",
+      "kitchen": "Fully Equipped Kitchen",
+      "balcony": "Private Balcony",
+      "privateBathroom": "Private Bathroom",
+      "view": "Mountain View",
+      "safeBox": "Safe box",
+      "smokeAlarm": "Smoke alarm",
+      "selfCheckIn": "Self check-in",
+      "lockBox": "Lockbox",
+      "outdoorHangingSwing": "Outdoor hanging swing",
+      "outdoorDiningArea": "Outdoor dining area",
+      "shuttleService": "Shuttle service"
+    },
+    "tabs": {
+      "all": "All",
+      "groundLevel": "Ground Level Apartment",
+      "upperLevel": "Upper Level Apartment"
+    }
   }
 }

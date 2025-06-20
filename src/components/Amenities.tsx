@@ -6,113 +6,114 @@ import { useTranslations } from "next-intl";
 
 export default function Amenities() {
   const tAmenities = useTranslations("amenities");
+  const tCommon = useTranslations("common");
   const [activeTab, setActiveTab] = useState("all");
 
   const categories = [
-    { key: "all", name: tAmenities("tabs.all") },
-    { key: "groundLevel", name: tAmenities("tabs.groundLevel") },
-    { key: "upperLevel", name: tAmenities("tabs.upperLevel") },
+    { key: "all", name: tCommon("tabs.all") },
+    { key: "groundLevel", name: tCommon("tabs.groundLevel") },
+    { key: "upperLevel", name: tCommon("tabs.upperLevel") },
   ];
 
   const apartmentAmenities = [
     {
       icon: <AmenityIcon icon="parking" />,
-      amenity: tAmenities("amenitiesIcons.parking"),
+      amenity: tCommon("amenitiesIcons.parking"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="courtyard" />,
-      amenity: tAmenities("amenitiesIcons.courtyard"),
+      amenity: tCommon("amenitiesIcons.courtyard"),
       apartment: "groundLevel",
     },
     {
       icon: <AmenityIcon icon="terrace" />,
-      amenity: tAmenities("amenitiesIcons.terrace"),
+      amenity: tCommon("amenitiesIcons.terrace"),
       apartment: "upperLevel",
     },
     {
       icon: <AmenityIcon icon="garden" />,
-      amenity: tAmenities("amenitiesIcons.garden"),
+      amenity: tCommon("amenitiesIcons.garden"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="washingMachine" />,
-      amenity: tAmenities("amenitiesIcons.washingMachine"),
+      amenity: tCommon("amenitiesIcons.washingMachine"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="mosquitoNets" />,
-      amenity: tAmenities("amenitiesIcons.mosquitoNets"),
+      amenity: tCommon("amenitiesIcons.mosquitoNets"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="wifi" />,
-      amenity: tAmenities("amenitiesIcons.wifi"),
+      amenity: tCommon("amenitiesIcons.wifi"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="airConditioning" />,
-      amenity: tAmenities("amenitiesIcons.airConditioning"),
+      amenity: tCommon("amenitiesIcons.airConditioning"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="tv" />,
-      amenity: tAmenities("amenitiesIcons.tv"),
+      amenity: tCommon("amenitiesIcons.tv"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="kitchen" />,
-      amenity: tAmenities("amenitiesIcons.kitchen"),
+      amenity: tCommon("amenitiesIcons.kitchen"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="balcony" />,
-      amenity: tAmenities("amenitiesIcons.balcony"),
+      amenity: tCommon("amenitiesIcons.balcony"),
       apartment: "upperLevel",
     },
     {
       icon: <AmenityIcon icon="privateBathroom" />,
-      amenity: tAmenities("amenitiesIcons.privateBathroom"),
+      amenity: tCommon("amenitiesIcons.privateBathroom"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="view" />,
-      amenity: tAmenities("amenitiesIcons.view"),
+      amenity: tCommon("amenitiesIcons.view"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="safeBox" />,
-      amenity: tAmenities("amenitiesIcons.safeBox"),
+      amenity: tCommon("amenitiesIcons.safeBox"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="smokeAlarm" />,
-      amenity: tAmenities("amenitiesIcons.smokeAlarm"),
+      amenity: tCommon("amenitiesIcons.smokeAlarm"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="selfCheckIn" />,
-      amenity: tAmenities("amenitiesIcons.selfCheckIn"),
+      amenity: tCommon("amenitiesIcons.selfCheckIn"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="lockBox" />,
-      amenity: tAmenities("amenitiesIcons.lockBox"),
+      amenity: tCommon("amenitiesIcons.lockBox"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="outdoorHangingSwing" />,
-      amenity: tAmenities("amenitiesIcons.outdoorHangingSwing"),
+      amenity: tCommon("amenitiesIcons.outdoorHangingSwing"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="outdoorDiningArea" />,
-      amenity: tAmenities("amenitiesIcons.outdoorDiningArea"),
+      amenity: tCommon("amenitiesIcons.outdoorDiningArea"),
       apartment: "all",
     },
     {
       icon: <AmenityIcon icon="shuttleService" />,
-      amenity: tAmenities("amenitiesIcons.shuttleService"),
+      amenity: tCommon("amenitiesIcons.shuttleService"),
       apartment: "all",
     },
   ];
@@ -131,7 +132,7 @@ export default function Amenities() {
   return (
     <section>
       <h1 className="text-primary mb-8 text-center text-3xl font-extrabold sm:text-4xl md:text-5xl">
-        Apartment Amenities
+        {tAmenities("title")}
       </h1>
 
       {/* Apartment Amenities */}

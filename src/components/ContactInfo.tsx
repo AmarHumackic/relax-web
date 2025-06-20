@@ -1,7 +1,11 @@
 import { LINKS } from "@/constants/links";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function ContactInfo() {
+  const tContactInfo = useTranslations("contact.contactInfo");
+  const tCommon = useTranslations("common");
+
   return (
     <section className="shadow-three rounded-2xl bg-white p-8">
       <h3 className="text-primary mb-4 text-xl font-bold">
@@ -9,10 +13,11 @@ export default function ContactInfo() {
       </h3>
       <ul className="text-body-color mb-6 space-y-3 text-base">
         <li>
-          <strong>Address:</strong> {LINKS.address}
+          <strong>{`${tContactInfo("address")}:`}</strong>{" "}
+          {tContactInfo("addressValue")}
         </li>
         <li>
-          <strong>Phone:</strong>{" "}
+          <strong>{`${tContactInfo("phone")}:`}</strong>{" "}
           <a
             href={`tel:${LINKS.phone}`}
             className="text-primary hover:underline"
@@ -21,7 +26,7 @@ export default function ContactInfo() {
           </a>
         </li>
         <li>
-          <strong>Email:</strong>{" "}
+          <strong>{`${tContactInfo("email")}:`}</strong>{" "}
           <a
             href={`mailto:${LINKS.email}`}
             className="text-primary hover:underline"
@@ -30,7 +35,7 @@ export default function ContactInfo() {
           </a>
         </li>
         <li>
-          <strong>Location:</strong>
+          <strong>{`${tContactInfo("location")}:`}</strong>
           <div className="mt-1 flex gap-3">
             <a
               href={LINKS.googleMaps}
@@ -38,7 +43,7 @@ export default function ContactInfo() {
               rel="noopener noreferrer"
               className="text-primary underline"
             >
-              Google Maps
+              {tContactInfo("googleMaps")}
             </a>
             <a
               href={LINKS.appleMaps}
@@ -46,14 +51,14 @@ export default function ContactInfo() {
               rel="noopener noreferrer"
               className="text-primary underline"
             >
-              Apple Maps
+              {tContactInfo("appleMaps")}
             </a>
           </div>
         </li>
       </ul>
       <div className="mb-6 overflow-hidden rounded shadow">
         <iframe
-          title="Google Maps"
+          title={tContactInfo("googleMaps")}
           src={`${LINKS.googleMaps}&z=16&output=embed`}
           width="100%"
           height="220"
@@ -67,14 +72,14 @@ export default function ContactInfo() {
       <div className="mx-auto mb-4 flex w-full max-w-lg items-center gap-3 py-2">
         <div className="flex-1 border-t border-gray-300" />
         <span className="text-sm font-medium text-gray-400 select-none">
-          or
+          {tCommon("or")}
         </span>
         <div className="flex-1 border-t border-gray-300" />
       </div>
       {/* Instant reservation label above booking buttons */}
       <div className="mx-auto mb-2 w-full max-w-lg text-center">
         <span className="text-primary text-sm font-semibold tracking-wide uppercase">
-          Instant reservation
+          {tCommon("instantReservation")}
         </span>
       </div>
       <div className="flex flex-col gap-3">
@@ -92,7 +97,7 @@ export default function ContactInfo() {
             className="mr-2"
             style={{ display: "inline", verticalAlign: "middle" }}
           />
-          <span className="whitespace-nowrap">Book on Booking.com</span>
+          <span className="whitespace-nowrap">{tCommon("bookOnBooking")}</span>
         </a>
         <a
           href={LINKS.airbnb}
@@ -108,7 +113,7 @@ export default function ContactInfo() {
             className="mr-2"
             style={{ display: "inline", verticalAlign: "middle" }}
           />
-          <span className="whitespace-nowrap">Book on Airbnb</span>
+          <span className="whitespace-nowrap">{tCommon("bookOnAirbnb")}</span>
         </a>
       </div>
     </section>

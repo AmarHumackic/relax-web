@@ -4,6 +4,27 @@ import AmenityIcon from "./AmenityIcon";
 export default function ApartmentsInfo() {
   const tGroundLevel = useTranslations("home.apartments.groundLevel");
   const tUpperLevel = useTranslations("home.apartments.upperLevel");
+  const tCommon = useTranslations("common");
+
+  const groundLevelAmenities = {
+    parking: tCommon("amenitiesIcons.parking"),
+    courtyard: tCommon("amenitiesIcons.courtyard"),
+    garden: tCommon("amenitiesIcons.garden"),
+    washingMachine: tCommon("amenitiesIcons.washingMachine"),
+    wifi: tCommon("amenitiesIcons.wifi"),
+    airConditioning: tCommon("amenitiesIcons.airConditioning"),
+    tv: tCommon("amenitiesIcons.tv"),
+  };
+
+  const upperLevelAmenities = {
+    parking: tCommon("amenitiesIcons.parking"),
+    terrace: tCommon("amenitiesIcons.terrace"),
+    garden: tCommon("amenitiesIcons.garden"),
+    washingMachine: tCommon("amenitiesIcons.washingMachine"),
+    wifi: tCommon("amenitiesIcons.wifi"),
+    airConditioning: tCommon("amenitiesIcons.airConditioning"),
+    tv: tCommon("amenitiesIcons.tv"),
+  };
 
   return (
     <section className="bg-gray-50 py-6 md:py-12">
@@ -21,7 +42,7 @@ export default function ApartmentsInfo() {
           </ul>
           {/* Amenities icons */}
           <div className="mt-4 flex flex-wrap gap-4 lg:flex-nowrap">
-            {Object.entries(tGroundLevel.raw("amenitiesIcons")).map(
+            {Object.entries(groundLevelAmenities).map(
               ([key, value]: [string, string]) => (
                 <div
                   key={key}
@@ -50,7 +71,7 @@ export default function ApartmentsInfo() {
           </ul>
           {/* Amenities icons */}
           <div className="mt-4 flex flex-wrap gap-4 lg:flex-nowrap">
-            {Object.entries(tUpperLevel.raw("amenitiesIcons")).map(
+            {Object.entries(upperLevelAmenities).map(
               ([key, value]: [string, string]) => (
                 <div
                   key={key}

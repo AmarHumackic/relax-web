@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 
 export default function Hero() {
   const tHero = useTranslations("home.hero");
+  const tCommon = useTranslations("common");
 
   return (
     <section className="relative flex min-h-[100vh] items-center justify-center overflow-hidden bg-white pt-32 pb-16 md:pt-40 md:pb-24">
@@ -34,7 +35,7 @@ export default function Hero() {
         {/* Instant reservation label above booking buttons */}
         <div className="mx-auto mb-2 w-full max-w-lg text-center">
           <span className="text-primary text-sm font-semibold tracking-wide uppercase">
-            {tHero("instantReservation")}
+            {tCommon("instantReservation")}
           </span>
         </div>
         {/* CTA Book Now */}
@@ -52,7 +53,9 @@ export default function Hero() {
               height={28}
               style={{ display: "inline", verticalAlign: "middle" }}
             />
-            <span className="whitespace-nowrap">{tHero("bookOnBooking")}</span>
+            <span className="whitespace-nowrap">
+              {tCommon("bookOnBooking")}
+            </span>
           </a>
           <a
             href="https://airbnb.com/your-listing-link"
@@ -67,14 +70,14 @@ export default function Hero() {
               height={28}
               style={{ display: "inline", verticalAlign: "middle" }}
             />
-            <span className="whitespace-nowrap">{tHero("bookOnAirbnb")}</span>
+            <span className="whitespace-nowrap">{tCommon("bookOnAirbnb")}</span>
           </a>
         </div>
         {/* Separator with 'or' */}
         <div className="mx-auto flex w-full max-w-lg items-center gap-3 py-2">
           <div className="flex-1 border-t border-gray-300" />
           <span className="text-sm font-medium text-gray-400 select-none">
-            {tHero("or")}
+            {tCommon("or")}
           </span>
           <div className="flex-1 border-t border-gray-300" />
         </div>
@@ -86,7 +89,7 @@ export default function Hero() {
             style={{ minWidth: "0" }}
           >
             <span className="whitespace-nowrap">
-              {tHero("contactUsDirectly")}
+              {tCommon("contactUsDirectly")}
             </span>
           </Link>
         </div>
