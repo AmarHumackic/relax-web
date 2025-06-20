@@ -178,7 +178,7 @@
         "title": "Vidoški Fortress",
         "description": "Vidoški, first mentioned in 1444, was a major medieval town in Herzegovina, strategically located and fortified with 13 towers."
       },
-      "necropolisRadimlja": {
+      "radimljaNecropolis": {
         "title": "Necropolis Radimlja",
         "description": "UNESCO necropolises near Stolac, like Radimlja and Boljuni, date to the 13th–16th century and are tied to legends, healing rituals, and local traditions."
       },
@@ -202,8 +202,9 @@
         "title": "Sara's Bridge",
         "description": "Built in 1896, Sara Kašiković’s Girls’ Bridge on the Bregava river honors a tragic love story; Stolac’s Austro-Hungarian era shaped its historic architecture."
       },
-      "sultanSelimMosque": {
-        "title": "Sultan Selim Mosque"
+      "mosque": {
+        "title": "Sultan Selim Mosque",
+        "description": "Built in 1519, Sultan Selim Mosque is the oldest and most prominent mosque in Stolac, known for its stone structure and unique Ottoman architecture."
       },
       "catholicChurch": {
         "title": "St. Elijah Church",
