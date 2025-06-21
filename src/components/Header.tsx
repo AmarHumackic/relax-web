@@ -7,6 +7,7 @@ import { Menu } from "@/types/menu";
 import { useTranslations } from "next-intl";
 import BookingBtn from "./BookingBtn";
 import AirbnbBtn from "./AirbnbBtn";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const tHeader = useTranslations("header");
@@ -99,8 +100,8 @@ const Header = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden items-center space-x-8 lg:flex xl:space-x-12">
-              <ul className="flex space-x-4 xl:space-x-12">
+            <nav className="hidden items-center space-x-6 lg:flex xl:space-x-10">
+              <ul className="flex space-x-4 xl:space-x-10">
                 {menuData.map((menuItem, index) => (
                   <li key={index} className="group relative">
                     {menuItem.path ? (
@@ -164,37 +165,39 @@ const Header = () => {
               </ul>
             </nav>
 
-            {/* Desktop Booking Buttons */}
+            {/* Desktop Booking Buttons and Language Switcher */}
             <div className="hidden items-center space-x-3 lg:flex xl:space-x-4">
               <BookingBtn isHeader />
-
-              {/* Airbnb Button with Dropdown */}
               <AirbnbBtn isHeader />
+              <LanguageSwitcher />
             </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setNavbarOpen((prevState) => !prevState)}
-              id="navbarToggler"
-              aria-label="Mobile Menu"
-              className="ring-primary block rounded-lg px-3 py-[6px] focus:ring-2 lg:hidden"
-            >
-              <span
-                className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 ${
-                  navbarOpen ? "top-[7px] rotate-45" : " "
-                }`}
-              />
-              <span
-                className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 ${
-                  navbarOpen ? "opacity-0" : " "
-                }`}
-              />
-              <span
-                className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 ${
-                  navbarOpen ? "top-[-8px] -rotate-45" : " "
-                }`}
-              />
-            </button>
+            {/* Mobile Menu Button and Language Switcher */}
+            <div className="flex items-center space-x-2 lg:hidden">
+              <LanguageSwitcher />
+              <button
+                onClick={() => setNavbarOpen((prevState) => !prevState)}
+                id="navbarToggler"
+                aria-label="Mobile Menu"
+                className="ring-primary block rounded-lg px-3 py-[6px] focus:ring-2"
+              >
+                <span
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 ${
+                    navbarOpen ? "top-[7px] rotate-45" : " "
+                  }`}
+                />
+                <span
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 ${
+                    navbarOpen ? "opacity-0" : " "
+                  }`}
+                />
+                <span
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 ${
+                    navbarOpen ? "top-[-8px] -rotate-45" : " "
+                  }`}
+                />
+              </button>
+            </div>
 
             {/* Mobile Navigation */}
             <nav
@@ -271,8 +274,6 @@ const Header = () => {
               {/* Mobile Booking Buttons */}
               <div className="mt-6 flex flex-col space-y-3">
                 <BookingBtn isHeader />
-
-                {/* Mobile Airbnb with Dropdown */}
                 <AirbnbBtn isHeader />
               </div>
             </nav>
