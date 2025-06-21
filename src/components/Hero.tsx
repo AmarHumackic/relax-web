@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import BookingBtn from "./BookingBtn";
+import AirbnbBtn from "./AirbnbBtn";
 
 export default function Hero() {
   const tHero = useTranslations("home.hero");
@@ -40,38 +42,10 @@ export default function Hero() {
         </div>
         {/* CTA Book Now */}
         <div className="mx-auto flex w-full max-w-lg flex-col gap-4 sm:max-w-md sm:flex-row md:min-w-lg">
-          <a
-            href="https://booking.com/your-listing-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex h-12 min-h-12 w-full flex-1 items-center justify-center gap-2 rounded-xs px-4 text-base font-medium whitespace-nowrap text-white transition duration-300 sm:w-auto"
-          >
-            <Image
-              src="/images/hero/bookingcom-logo.svg"
-              alt="Booking.com logo"
-              width={28}
-              height={28}
-              style={{ display: "inline", verticalAlign: "middle" }}
-            />
-            <span className="whitespace-nowrap">
-              {tCommon("bookOnBooking")}
-            </span>
-          </a>
-          <a
-            href="https://airbnb.com/your-listing-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex h-12 min-h-12 w-full flex-1 items-center justify-center gap-2 rounded-xs px-4 text-base font-medium whitespace-nowrap text-white transition duration-300 sm:w-auto"
-          >
-            <Image
-              src="/images/hero/airbnb-logo.svg"
-              alt="Airbnb logo"
-              width={28}
-              height={28}
-              style={{ display: "inline", verticalAlign: "middle" }}
-            />
-            <span className="whitespace-nowrap">{tCommon("bookOnAirbnb")}</span>
-          </a>
+          <BookingBtn />
+
+          {/* Airbnb Button with Dropdown */}
+          <AirbnbBtn />
         </div>
         {/* Separator with 'or' */}
         <div className="mx-auto flex w-full max-w-lg items-center gap-3 py-2">

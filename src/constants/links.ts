@@ -11,6 +11,7 @@ export const LINKS = {
     facebook: "https://facebook.com/relaxstolac",
     instagram: "https://instagram.com/relaxstolac",
   },
-  booking: "https://booking.com/your-listing-link",
-  airbnb: "https://airbnb.com/your-listing-link",
+  booking: "https://www.booking.com/hotel/ba/apartment-relax-stolac.html",
+  airbnbGroundLevel: "https://www.airbnb.com/rooms/1151472044322074600",
+  airbnbUpperLevel: "https://www.airbnb.com/rooms/37884046",
 };

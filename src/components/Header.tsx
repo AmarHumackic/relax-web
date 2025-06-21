@@ -5,10 +5,11 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu } from "@/types/menu";
 import { useTranslations } from "next-intl";
+import BookingBtn from "./BookingBtn";
+import AirbnbBtn from "./AirbnbBtn";
 
 const Header = () => {
   const tHeader = useTranslations("header");
-  const tCommon = useTranslations("common");
   const [navbarOpen, setNavbarOpen] = useState(false); // Navbar toggle
   const [sticky, setSticky] = useState(false); // Sticky Navbar
 
@@ -165,40 +166,10 @@ const Header = () => {
 
             {/* Desktop Booking Buttons */}
             <div className="hidden items-center space-x-3 lg:flex xl:space-x-4">
-              <a
-                href="https://www.booking.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex h-12 items-center gap-2 rounded-xs px-4 py-3 text-base font-medium whitespace-nowrap text-white transition duration-300 xl:px-6"
-              >
-                <Image
-                  src="/images/hero/bookingcom-logo.svg"
-                  alt="Booking.com logo"
-                  width={24}
-                  height={24}
-                  style={{ display: "inline", verticalAlign: "middle" }}
-                />
-                <span className="whitespace-nowrap">
-                  {tCommon("bookOnBooking")}
-                </span>
-              </a>
-              <a
-                href="https://www.airbnb.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex h-12 items-center gap-2 rounded-xs px-4 py-3 text-base font-medium whitespace-nowrap text-white transition duration-300 xl:px-6"
-              >
-                <Image
-                  src="/images/hero/airbnb-logo.svg"
-                  alt="Airbnb logo"
-                  width={24}
-                  height={24}
-                  style={{ display: "inline", verticalAlign: "middle" }}
-                />
-                <span className="whitespace-nowrap">
-                  {tCommon("bookOnAirbnb")}
-                </span>
-              </a>
+              <BookingBtn isHeader />
+
+              {/* Airbnb Button with Dropdown */}
+              <AirbnbBtn isHeader />
             </div>
 
             {/* Mobile Menu Button */}
@@ -299,40 +270,10 @@ const Header = () => {
 
               {/* Mobile Booking Buttons */}
               <div className="mt-6 flex flex-col space-y-3">
-                <a
-                  href="https://www.booking.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex h-12 items-center justify-center gap-2 rounded-xs px-4 py-3 text-base font-medium text-white transition duration-300"
-                >
-                  <Image
-                    src="/images/hero/bookingcom-logo.svg"
-                    alt="Booking.com logo"
-                    width={24}
-                    height={24}
-                    style={{ display: "inline", verticalAlign: "middle" }}
-                  />
-                  <span className="whitespace-nowrap">
-                    {tCommon("bookOnBooking")}
-                  </span>
-                </a>
-                <a
-                  href="https://www.airbnb.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex h-12 items-center justify-center gap-2 rounded-xs px-4 py-3 text-base font-medium text-white transition duration-300"
-                >
-                  <Image
-                    src="/images/hero/airbnb-logo.svg"
-                    alt="Airbnb logo"
-                    width={24}
-                    height={24}
-                    style={{ display: "inline", verticalAlign: "middle" }}
-                  />
-                  <span className="whitespace-nowrap">
-                    {tCommon("bookOnAirbnb")}
-                  </span>
-                </a>
+                <BookingBtn isHeader />
+
+                {/* Mobile Airbnb with Dropdown */}
+                <AirbnbBtn isHeader />
               </div>
             </nav>
           </div>
