@@ -3,17 +3,42 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import menuData from "./menuData";
+import { Menu } from "@/types/menu";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
-  // Navbar toggle
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const navbarToggleHandler = () => {
-    setNavbarOpen(!navbarOpen);
-  };
+  const tHeader = useTranslations("header");
+  const tCommon = useTranslations("common");
+  const [navbarOpen, setNavbarOpen] = useState(false); // Navbar toggle
+  const [sticky, setSticky] = useState(false); // Sticky Navbar
 
-  // Sticky Navbar
-  const [sticky, setSticky] = useState(false);
+  const menuData: Menu[] = [
+    {
+      id: 1,
+      title: tHeader("home"),
+      path: "/",
+      newTab: false,
+    },
+    {
+      id: 2,
+      title: tHeader("amenities"),
+      path: "/amenities",
+      newTab: false,
+    },
+    {
+      id: 3,
+      title: tHeader("gallery"),
+      path: "/gallery",
+      newTab: false,
+    },
+    {
+      id: 4,
+      title: tHeader("contact"),
+      path: "/contact",
+      newTab: false,
+    },
+  ];
+
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
       setSticky(true);
@@ -21,6 +46,7 @@ const Header = () => {
       setSticky(false);
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
   });
@@ -66,7 +92,7 @@ const Header = () => {
             <div className="flex w-full items-center justify-between px-4">
               <div>
                 <button
-                  onClick={navbarToggleHandler}
+                  onClick={() => setNavbarOpen((prevState) => !prevState)}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
                   className="ring-primary absolute top-1/2 right-4 block translate-y-[-50%] rounded-lg px-3 py-[6px] focus:ring-2 lg:hidden"
@@ -164,22 +190,6 @@ const Header = () => {
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <div className="flex items-center gap-4">
                   <a
-                    href="https://www.airbnb.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex hidden h-12 items-center gap-2 rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-4 lg:px-4 xl:px-4"
-                  >
-                    <Image
-                      src="/images/hero/airbnb-logo.svg"
-                      alt="Airbnb logo"
-                      width={24}
-                      height={24}
-                      className="mr-2"
-                      style={{ display: "inline", verticalAlign: "middle" }}
-                    />
-                    <span className="whitespace-nowrap">Book on Airbnb</span>
-                  </a>
-                  <a
                     href="https://www.booking.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -194,7 +204,25 @@ const Header = () => {
                       style={{ display: "inline", verticalAlign: "middle" }}
                     />
                     <span className="whitespace-nowrap">
-                      Book on Booking.com
+                      {tCommon("bookOnBooking")}
+                    </span>
+                  </a>
+                  <a
+                    href="https://www.airbnb.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex hidden h-12 items-center gap-2 rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-4 lg:px-4 xl:px-4"
+                  >
+                    <Image
+                      src="/images/hero/airbnb-logo.svg"
+                      alt="Airbnb logo"
+                      width={24}
+                      height={24}
+                      className="mr-2"
+                      style={{ display: "inline", verticalAlign: "middle" }}
+                    />
+                    <span className="whitespace-nowrap">
+                      {tCommon("bookOnAirbnb")}
                     </span>
                   </a>
                 </div>

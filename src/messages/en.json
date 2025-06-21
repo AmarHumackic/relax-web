@@ -252,8 +252,10 @@
     }
   },
   "header": {
-    "title": " Header",
-    "description": " Header page"
+    "home": "Home",
+    "amenities": "Amenities",
+    "gallery": "Gallery",
+    "contact": "Contact"
   },
   "footer": {
     "title": " Footer",

@@ -121,11 +121,10 @@ export default function ContactForm() {
             name="fullName"
             required
             placeholder={tContactForm("fullNamePlaceholder")}
-            autoCapitalize="words"
             value={form.fullName}
             onChange={handleChange}
             disabled={loading}
-            className="focus:border-primary focus:ring-primary/30 w-full rounded border border-gray-200 bg-white px-4 py-2 text-black capitalize transition placeholder:text-gray-400 focus:ring-2 focus:outline-none"
+            className={`focus:border-primary focus:ring-primary/30 w-full rounded border border-gray-200 bg-white px-4 py-2 text-black ${form.fullName.length > 0 ? "capitalize" : ""} transition placeholder:text-gray-400 focus:ring-2 focus:outline-none`}
           />
         </div>
         <div>
