@@ -31,7 +31,7 @@ export default function Reviews() {
     }
     animate();
     return () => cancelAnimationFrame(animationFrame);
-  }, [isPaused]);
+  }, [isPaused, reviews.length]);
 
   // Manual scroll with snap and pause
   const handleArrow = (dir: "left" | "right") => {

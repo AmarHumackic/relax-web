@@ -1,6 +1,8 @@
 import { LINKS } from "@/constants/links";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import BookingBtn from "./BookingBtn";
+import AirbnbBtn from "./AirbnbBtn";
 
 export default function ContactInfo() {
   const tContactInfo = useTranslations("contact.contactInfo");
@@ -83,38 +85,10 @@ export default function ContactInfo() {
         </span>
       </div>
       <div className="flex flex-col gap-3">
-        <a
-          href={LINKS.booking}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex h-12 items-center justify-center gap-2 rounded-xs px-4 text-base font-medium text-white transition duration-300"
-        >
-          <Image
-            src="/images/hero/bookingcom-logo.svg"
-            alt="Booking.com logo"
-            width={24}
-            height={24}
-            className="mr-2"
-            style={{ display: "inline", verticalAlign: "middle" }}
-          />
-          <span className="whitespace-nowrap">{tCommon("bookOnBooking")}</span>
-        </a>
-        <a
-          href={LINKS.airbnb}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex h-12 items-center justify-center gap-2 rounded-xs px-4 text-base font-medium text-white transition duration-300"
-        >
-          <Image
-            src="/images/hero/airbnb-logo.svg"
-            alt="Airbnb logo"
-            width={24}
-            height={24}
-            className="mr-2"
-            style={{ display: "inline", verticalAlign: "middle" }}
-          />
-          <span className="whitespace-nowrap">{tCommon("bookOnAirbnb")}</span>
-        </a>
+        <BookingBtn />
+
+        {/* Airbnb Button with Dropdown */}
+        <AirbnbBtn />
       </div>
     </section>
   );
