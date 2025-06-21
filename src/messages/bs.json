@@ -1,26 +1,303 @@
 {
   "home": {
-    "title": "BS Home",
-    "description": "BS Home page"
-  },
-  "amenities": {
-    "title": "BS Amenities",
-    "description": "BS Amenities page"
+    "hero": {
+      "title": "Relax Apartmani",
+      "subtitle": "Uživajte u boravku u Stocu, Bosna i Hercegovina!",
+      "description": "Relax Apartmani nude dva udobna i moderna apartmana sa prostranom terasom, privatnim parkingom i vrtom punim ruža. Idealno locirani u centru grada, savršeni za istraživanje Hercegovine i opuštanje u mirnom okruženju s pogledom na starogradsku tvrđavu."
+    },
+    "apartments": {
+      "groundLevel": {
+        "title": "Apartman u prizemlju (2 spavaće sobe)",
+        "description": "Smješten u prizemlju, ovaj udobni apartman ima pogled na naš bujni vrt pun živopisnih ruža. Uživajte u privatnom dvorištu okruženom mirisnim cvjetovima nakon dana istraživanja grada. Lociran u gradu Stolac, naša lokacija nudi lak pristup atrakcijama. Uživajte u bezbrižnom boravku s našim besplatnim privatnim parkingom.",
+        "rooms": {
+          "0": "2 spavaće sobe",
+          "1": "1 dnevni boravak",
+          "2": "1 kupatilo (kada ili tuš)",
+          "3": "6 kreveta",
+          "4": "Cvjetni vrt",
+          "5": "Klima uređaj, WiFi, TV, mašina za pranje"
+        }
+      },
+      "upperLevel": {
+        "title": "Apartman na spratu (3 spavaće sobe)",
+        "description": "Smješten na spratu, ovaj svijetli i udobni apartman nudi mir i privatnost u mirnom kvartu s prijateljskim lokalnim stanovništvom. Ima privatno parking mjesto, veliki balkon idealan za opuštanje i prekrasan pogled na okolna brda i vrtove. Unutrašnjost uključuje potpuno opremljenu kuhinju, udobnu dnevnu sobu i više spavaćih aranžmana savršenih za porodice ili grupe.",
+        "rooms": {
+          "0": "3 spavaće sobe",
+          "1": "1 dnevni boravak",
+          "2": "1 kupatilo (kada)",
+          "3": "7 kreveta",
+          "4": "Prostrana terasa",
+          "5": "Klima uređaj, WiFi, TV, mašina za pranje"
+        }
+      }
+    },
+    "location": {
+      "title": "Lokacija",
+      "description": "Nalazimo se u mirnom području, samo 3 minute hoda od centra grada. Savršeno za opuštanje, a ipak blizu svega što vam treba!"
+    },
+    "reviews": {
+      "title": "Šta kažu naši gosti",
+      "list": [
+        {
+          "name": "Deborah",
+          "country": "Ujedinjeno Kraljevstvo",
+          "rating": 10,
+          "comment": "Svidjelo mi se sve, domaćini su bili odlični, kreveti udobni i odlična lokacija. Ako tražite mjesto za rezervaciju u Stocu, rezervišite ovdje :)"
+        },
+        {
+          "name": "Dainoras",
+          "country": "Litvanija",
+          "rating": 10,
+          "comment": "Domaćini su super ljubazni i lokacija nije predaleko od Mostara, sobe su savršene, toplo preporučujem, posebno ako ste s većom grupom"
+        },
+        {
+          "name": "Belma",
+          "country": "Slovačka",
+          "rating": 10,
+          "comment": "Idealna lokacija za Stolac, vrlo prijateljski domaćini, klima uređaj, mašina za pranje, čak je bilo i kafe, šampon... Žalili smo što moramo napustiti apartman nakon 3 noći. Usput, kajakali smo na Bregavi, prošli kroz kanjon Istup, posjetili tvrđavu iznad grada i znamenitosti u samom gradu, Daorson, staru crkvu... Sve stvarno prelijepo."
+        },
+        {
+          "name": "Mehmed",
+          "country": "Bosna i Hercegovina",
+          "rating": 10,
+          "comment": "Sve je bilo dobro. Stvarno sam bio zadovoljan."
+        },
+        {
+          "name": "Jane",
+          "country": "Sjedinjene Države",
+          "rating": 10,
+          "comment": "Ovo je bilo tako divno prilagođeno mjesto za uživanje u području. Sve je bilo čisto i udobno - svidjelo nam se!"
+        },
+        {
+          "name": "Marko",
+          "country": "Slovenija",
+          "rating": 10,
+          "comment": "Prijateljski domaćini, dobra lokacija, čisto i dobra vrijednost za novac."
+        },
+        {
+          "name": "Julia",
+          "country": "Belgija",
+          "rating": 10,
+          "comment": "Sve je bilo savršeno. Vrlo čisti apartmani, pokrivene terase s pogledom na planine. Kuhinjski pribor je osiguran i blizu centra grada. Savršeno za porodični boravak."
+        },
+        {
+          "name": "Dagmara",
+          "country": "Poljska",
+          "rating": 10,
+          "comment": "Vrlo lijepo, koristan domaćin, savršeno čist i dobro opremljen novi apartman. Siguran parking u dvorištu. Vrlo lijepo područje, u blizini atmosferičan pub s tradicionalnom hranom po pristupačnim cijenama."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Često postavljena pitanja",
+      "list": [
+        {
+          "question": "Koje su vrijeme check-in i check-out?",
+          "answer": "Check-in je od 13:00, a check-out do 10:30. Fleksibilno po dogovoru ako je moguće."
+        },
+        {
+          "question": "Da li postoji parking mjesto?",
+          "answer": "Da, postoji besplatno privatno parking mjesto za svaki apartman."
+        },
+        {
+          "question": "Da li su kućni ljubimci dozvoljeni?",
+          "answer": "Ne, kućni ljubimci nisu dozvoljeni."
+        },
+        {
+          "question": "Da li postoji mašina za pranje?",
+          "answer": "Da, oba apartmana imaju mašinu za pranje."
+        },
+        {
+          "question": "Da li postoji WiFi i klima uređaj?",
+          "answer": "Da, oba apartmana imaju besplatan WiFi i klima uređaj."
+        },
+        {
+          "question": "Da li su zabave dozvoljene?",
+          "answer": "Ne, zabave/događaji nisu dozvoljeni."
+        }
+      ]
+    }
   },
   "gallery": {
-    "title": "BS Gallery",
-    "description": "BS Gallery page"
+    "title": "Fotogalerija",
+    "descriptions": {
+      "exteriorView": "Vanjska strana",
+      "exteriorViewBalcony": "Vanjska strana balkon",
+      "exteriorViewNamePlate": "Vanjska strana natpis",
+      "exteriorViewGarden": "Vanjska strana vrt",
+      "exteriorViewOutdoorSink": "Vanjska strana vanjski umivaonik",
+      "groundLevelApartmentGarden": "Apartman u prizemlju vrt",
+      "groundLevelApartmentCourtyard": "Apartman u prizemlju dvorište",
+      "groundLevelApartmentCourtyardSwing": "Apartman u prizemlju dvorište ljuljaška",
+      "groundLevelApartmentLivingRoom": "Apartman u prizemlju dnevni boravak",
+      "groundLevelApartmentKitchen": "Apartman u prizemlju kuhinja",
+      "groundLevelApartmentBedroomSingleBeds": "Apartman u prizemlju spavaća soba pojedinačni kreveti",
+      "groundLevelApartmentBedroomDoubleBed": "Apartman u prizemlju spavaća soba bračni krevet",
+      "groundLevelApartmentBathroom": "Apartman u prizemlju kupatilo",
+      "groundLevelApartmentHallway": "Apartman u prizemlju hodnik",
+      "upperLevelApartmentSpaciousTerrace": "Apartman na spratu prostrana terasa",
+      "upperLevelApartmentSpaciousTerraceSeatingArea": "Apartman na spratu prostrana terasa prostor za sjedenje",
+      "upperLevelApartmentSpaciousTerraceSwing": "Apartman na spratu prostrana terasa ljuljaška",
+      "upperLevelApartmentLivingRoom": "Apartman na spratu dnevni boravak",
+      "upperLevelApartmentKitchen": "Apartman na spratu kuhinja",
+      "upperLevelApartmentBedroomDoubleBed": "Apartman na spratu spavaća soba bračni krevet",
+      "upperLevelApartmentBedroomSingleBeds": "Apartman na spratu spavaća soba pojedinačni kreveti",
+      "upperLevelApartmentBathroom": "Apartman na spratu kupatilo",
+      "upperLevelApartmentExteriorLights": "Apartman na spratu vanjska svjetla"
+    }
+  },
+  "amenities": {
+    "title": "Sadržaji apartmana"
+  },
+  "cityAttractions": {
+    "title": "Atrakcije Stoca",
+    "attractions": {
+      "oldTown": {
+        "title": "Tvrđava Vidoški",
+        "description": "Vidoški, prvi put spomenut 1444. godine, bio je glavni srednjovjekovni grad u Hercegovini, strateški lociran i utvrđen s 13 tornjeva."
+      },
+      "radimljaNecropolis": {
+        "title": "Nekropola Radimlja",
+        "description": "UNESCO nekropole u blizini Stoca, poput Radimlje i Boljuna, datiraju iz 13-16. stoljeća i povezane su s legendama, ritualima liječenja i lokalnim tradicijama."
+      },
+      "daorson": {
+        "title": "Ilirska gradina Daorson",
+        "description": "Daorson, drevni grad Daorsa, cvjetao je u 3-2. st. p.n.e. Utvrđen kiklopskim zidovima, uništen je oko 50. godine p.n.e. i nikad nije obnovljen."
+      },
+      "badanjCave": {
+        "title": "Paleolitska pećina Badanj",
+        "description": "Pećina Badanj u blizini Stoca sadrži najstariju umjetnost u Bosni - uklesanog konja iz 13.000. godine p.n.e. Ključno paleolitsko nalazište pokazuje tragove sezonskog ljudskog života."
+      },
+      "bregava": {
+        "title": "Rijeka Bregava",
+        "description": "Povijesni mlinovi i jedinstveni most Ćuprija s neravnim lukovima stoje uz rijeku Bregavu u Stocu, gdje se lokalno stanovništvo također kupa i opušta."
+      },
+      "provalijeWaterfall": {
+        "title": "Vodopad Provalije",
+        "description": "Gdje se grad susreće s prirodom - vodopad Provalije se slijeva kroz stari dio Stoca, što mu je donijelo nadimak \"Stolačka Niagara\"."
+      },
+      "pjeneWaterfall": {
+        "title": "Vodopad Pjene",
+        "description": "Otkrijte skrivenu ljepotu vodopada Pjene u Stocu - gdje se prirodna tišina susreće s kaskadnim vodama u savršenom okruženju za mirne bijege."
+      },
+      "riverMills": {
+        "title": "Naslijeđe riječnih mlinova",
+        "description": "Povijesni mlinovi i valjaonice uz rijeku Bregavu oblikovali su stolačku ekonomiju od 15. stoljeća, s 12 mjesta još uvijek sačuvanih danas."
+      },
+      "cuprijaBridge": {
+        "title": "Most Ćuprija",
+        "description": "Most Ćuprija, vjerojatno srednjovjekovni, stoji u Stocu s nepravilnim lukovima izgrađenim iz inata u 17. stoljeću - što mu je donijelo nadimak \"Inat most\"."
+      },
+      "saraBridge": {
+        "title": "Sarin most",
+        "description": "Izgrađen 1896. godine, Djevojački most Sare Kašiković na rijeci Bregavi odaje počast tragičnoj ljubavnoj priči; stolačka austro-ugarska era oblikovala je njegovu povijesnu arhitekturu."
+      },
+      "mosque": {
+        "title": "Džamija sultana Selima",
+        "description": "Izgrađena 1519. godine, džamija sultana Selima je najstarija i najistaknutija džamija u Stocu, poznata po svojoj kamenoj strukturi i jedinstvenoj osmanskoj arhitekturi."
+      },
+      "catholicChurch": {
+        "title": "Crkva sv. Ilije",
+        "description": "Katolička crkva sv. Ilije u Stocu nudi mirno mjesto za bogoslužje i prikazuje bogato duhovno i kulturno naslijeđe grada."
+      },
+      "orthodoxChurch": {
+        "title": "Crkva sv. Petra i Pavla",
+        "description": "Pravoslavna crkva sv. Petra i Pavla iz 1505. godine u Ošanjićima odaje počast vojvodi Radosavu Hrabrenu, čiji sudske stolice simboliziraju stolačko feudalno naslijeđe i moć."
+      },
+      "tekke": {
+        "title": "Tekija Naqshbandi",
+        "description": "Stolačka tekija je duhovni i kulturni centar na rijeci Bregavi, koji prikazuje bogato sufijsko naslijeđe i prepoznatljivu osmansku arhitekturu."
+      },
+      "makHouse": {
+        "title": "Makova kuća",
+        "description": "Mak Dizdar, veliki bosanski pjesnik rođen u Stocu, poštovan je muzejem Makova kuća i Fondacijom, koja slavi njegov život, rad i srednjovjekovnu umjetnost stećaka."
+      },
+      "waterFountains": {
+        "title": "Vodene fontane",
+        "description": "Stolačko vodeno naslijeđe obuhvaća drevne kamenite rezervoare, osmanske fontane i prvi vodovod iz 1908. godine, s mnogim javnim fontanama koje još uvijek osvježavaju lokalno stanovništvo."
+      }
+    }
   },
   "contact": {
-    "title": "BS Contact",
-    "description": "BS Contact page"
+    "title": "Želite li rezervisati svoj boravak?",
+    "contactInfo": {
+      "contactInformation": "Kontakt informacije",
+      "address": "Adresa",
+      "addressValue": "Lazara Lazarevića 27, Stolac",
+      "phone": "Telefon",
+      "email": "Email",
+      "location": "Lokacija",
+      "googleMaps": "Google Maps",
+      "appleMaps": "Apple Maps",
+      "contactUs": "Kontaktirajte nas",
+      "country": "Bosna i Hercegovina"
+    },
+    "contactForm": {
+      "title": "Koristite obrazac ispod da nas kontaktirate u vezi s vašim boravkom. Odgovorit ćemo vam u roku od nekoliko sati sa svim detaljima koji vam trebaju!",
+      "fullName": "Puno ime",
+      "fullNamePlaceholder": "Unesite vaše puno ime",
+      "email": "Email",
+      "emailPlaceholder": "Unesite vašu email adresu",
+      "checkIn": "Check-in",
+      "checkInPlaceholder": "Odaberite datum check-in",
+      "checkOut": "Check-out",
+      "checkOutPlaceholder": "Odaberite datum check-out",
+      "apartment": "Apartman",
+      "numOfPersons": "Broj osoba",
+      "message": "Poruka",
+      "messagePlaceholder": "Napišite vašu poruku ili posebne zahtjeve...",
+      "sending": "Slanje...",
+      "sendEnquiry": "Pošaljite upit",
+      "dateError": "Datum check-out ne može biti prije datuma check-in",
+      "enquirySuccess": "Hvala vam na upitu! Odgovorit ćemo vam u roku od nekoliko sati.",
+      "enquiryError": "Nešto je pošlo naopako. Molimo pokušajte ponovo kasnije."
+    }
   },
   "header": {
-    "title": "BS Header",
-    "description": "BS Header page"
+    "home": "Početna",
+    "gallery": "Galerija",
+    "amenities": "Sadržaji",
+    "attractions": "Atrakcije",
+    "contact": "Kontakt"
   },
   "footer": {
-    "title": "BS Footer",
-    "description": "BS Footer page"
+    "description1": "U Relax apartmanima Stolac vjerujemo da svaki gost zaslužuje savršen boravak. Naši moderni, potpuno opremljeni apartmani nude savršenu mješavinu udobnosti i praktičnosti, postavljeni na prekrasnoj pozadini stolačke prirodne ljepote.",
+    "description2": "Bilo da tražite mirno povlačenje ili praznik pun avantura, naši apartmani pružaju idealnu bazu za istraživanje bogate povijesti i prirodnih čuda Hercegovine. Ponosimo se osiguravanjem da vaš boravak bude nezaboravan, udoban i stvarno opuštan.",
+    "description3": "Od trenutka kada stignete, doživjet ćete našu toplu gostoprimnost i pažljivost prema detaljima. Ovdje smo da vaš boravak u Stocu bude izuzetan na svaki način.",
+    "copyright": "Relax Apartmani Stolac © {year} Sva prava zadržana"
+  },
+  "common": {
+    "instantReservation": "Trenutna rezervacija",
+    "bookOnBooking": "Rezerviši na Booking.com",
+    "bookOnAirbnb": "Rezerviši na Airbnb",
+    "or": "ili",
+    "contactUsDirectly": "Kontaktirajte nas direktno",
+    "amenitiesIcons": {
+      "parking": "Privatni parking",
+      "courtyard": "Popločano dvorište",
+      "terrace": "Prostrana terasa",
+      "garden": "Cvjetni vrt",
+      "washingMachine": "Mašina za pranje",
+      "mosquitoNets": "Mreže protiv komaraca",
+      "wifi": "WiFi",
+      "airConditioning": "Klima uređaj",
+      "tv": "Ravni TV ekran",
+      "kitchen": "Potpuno opremljena kuhinja",
+      "balcony": "Privatni balkon",
+      "privateBathroom": "Privatno kupatilo",
+      "view": "Pogled na planine",
+      "safeBox": "Sef",
+      "smokeAlarm": "Detektor dima",
+      "selfCheckIn": "Samo check-in",
+      "lockBox": "Sigurnosna kutija",
+      "outdoorHangingSwing": "Vanjska viseća ljuljaška",
+      "outdoorDiningArea": "Vanjski prostor za jelo",
+      "shuttleService": "Transfer usluga"
+    },
+    "tabs": {
+      "all": "Sve",
+      "groundLevel": "Apartman u prizemlju",
+      "upperLevel": "Apartman na spratu"
+    }
   }
 }

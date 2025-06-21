@@ -17,7 +17,7 @@ export default function LanguageSwitcher() {
   return (
     <button
       onClick={handleLanguageChange}
-      className="flex h-6 w-8 items-center justify-center rounded-sm transition-all duration-200 hover:scale-110"
+      className="flex h-6 w-8 cursor-pointer items-center justify-center rounded-sm transition-all duration-200 hover:scale-110"
       aria-label={`Switch to ${currentLocale === "bs" ? "English" : "Bosnian"}`}
     >
       {currentLocale === "bs" ? (
