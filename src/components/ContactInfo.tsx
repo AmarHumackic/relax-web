@@ -14,7 +14,7 @@ export default function ContactInfo() {
       <ul className="text-body-color mb-6 space-y-3 text-base">
         <li>
           <strong>{`${tContactInfo("address")}:`}</strong>{" "}
-          {tContactInfo("addressValue")}
+          {`${tContactInfo("addressValue")}, ${tContactInfo("country")}`}
         </li>
         <li>
           <strong>{`${tContactInfo("phone")}:`}</strong>{" "}

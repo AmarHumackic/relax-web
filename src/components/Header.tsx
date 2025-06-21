@@ -21,18 +21,24 @@ const Header = () => {
     },
     {
       id: 2,
-      title: tHeader("amenities"),
-      path: "/amenities",
-      newTab: false,
-    },
-    {
-      id: 3,
       title: tHeader("gallery"),
       path: "/gallery",
       newTab: false,
     },
     {
+      id: 3,
+      title: tHeader("amenities"),
+      path: "/amenities",
+      newTab: false,
+    },
+    {
       id: 4,
+      title: tHeader("attractions"),
+      path: "/attractions",
+      newTab: false,
+    },
+    {
+      id: 5,
       title: tHeader("contact"),
       path: "/contact",
       newTab: false,

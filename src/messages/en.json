@@ -118,6 +118,34 @@
       ]
     }
   },
+  "gallery": {
+    "title": "Photo Gallery",
+    "descriptions": {
+      "exteriorView": "Exterior View",
+      "exteriorViewBalcony": "Exterior View Balcony",
+      "exteriorViewNamePlate": "Exterior View Name Plate",
+      "exteriorViewGarden": "Exterior View Garden",
+      "exteriorViewOutdoorSink": "Exterior View Outdoor Sink",
+      "groundLevelApartmentGarden": "Ground Level Apartment Garden",
+      "groundLevelApartmentCourtyard": "Ground Level Apartment Courtyard",
+      "groundLevelApartmentCourtyardSwing": "Ground Level Apartment Courtyard Swing",
+      "groundLevelApartmentLivingRoom": "Ground Level Apartment Living Room",
+      "groundLevelApartmentKitchen": "Ground Level Apartment Kitchen",
+      "groundLevelApartmentBedroomSingleBeds": "Ground Level Apartment Bedroom Single Beds",
+      "groundLevelApartmentBedroomDoubleBed": "Ground Level Apartment Bedroom Double Bed",
+      "groundLevelApartmentBathroom": "Ground Level Apartment Bathroom",
+      "groundLevelApartmentHallway": "Ground Level Apartment Hallway",
+      "upperLevelApartmentSpaciousTerrace": "Upper Level Apartment Spacious Terrace",
+      "upperLevelApartmentSpaciousTerraceSeatingArea": "Upper Level Apartment Spacious Terrace Seating Area",
+      "upperLevelApartmentSpaciousTerraceSwing": "Upper Level Apartment Spacious Terrace Swing",
+      "upperLevelApartmentLivingRoom": "Upper Level Apartment Living Room",
+      "upperLevelApartmentKitchen": "Upper Level Apartment Kitchen",
+      "upperLevelApartmentBedroomDoubleBed": "Upper Level Apartment Bedroom Double Bed",
+      "upperLevelApartmentBedroomSingleBeds": "Upper Level Apartment Bedroom Single Beds",
+      "upperLevelApartmentBathroom": "Upper Level Apartment Bathroom",
+      "upperLevelApartmentExteriorLights": "Upper Level Apartment Exterior Lights"
+    }
+  },
   "amenities": {
     "title": "Apartments Amenities"
   },
@@ -190,45 +218,19 @@
       }
     }
   },
-  "gallery": {
-    "title": "Photo Gallery",
-    "descriptions": {
-      "exteriorView": "Exterior View",
-      "exteriorViewBalcony": "Exterior View Balcony",
-      "exteriorViewNamePlate": "Exterior View Name Plate",
-      "exteriorViewGarden": "Exterior View Garden",
-      "exteriorViewOutdoorSink": "Exterior View Outdoor Sink",
-      "groundLevelApartmentGarden": "Ground Level Apartment Garden",
-      "groundLevelApartmentCourtyard": "Ground Level Apartment Courtyard",
-      "groundLevelApartmentCourtyardSwing": "Ground Level Apartment Courtyard Swing",
-      "groundLevelApartmentLivingRoom": "Ground Level Apartment Living Room",
-      "groundLevelApartmentKitchen": "Ground Level Apartment Kitchen",
-      "groundLevelApartmentBedroomSingleBeds": "Ground Level Apartment Bedroom Single Beds",
-      "groundLevelApartmentBedroomDoubleBed": "Ground Level Apartment Bedroom Double Bed",
-      "groundLevelApartmentBathroom": "Ground Level Apartment Bathroom",
-      "groundLevelApartmentHallway": "Ground Level Apartment Hallway",
-      "upperLevelApartmentSpaciousTerrace": "Upper Level Apartment Spacious Terrace",
-      "upperLevelApartmentSpaciousTerraceSeatingArea": "Upper Level Apartment Spacious Terrace Seating Area",
-      "upperLevelApartmentSpaciousTerraceSwing": "Upper Level Apartment Spacious Terrace Swing",
-      "upperLevelApartmentLivingRoom": "Upper Level Apartment Living Room",
-      "upperLevelApartmentKitchen": "Upper Level Apartment Kitchen",
-      "upperLevelApartmentBedroomDoubleBed": "Upper Level Apartment Bedroom Double Bed",
-      "upperLevelApartmentBedroomSingleBeds": "Upper Level Apartment Bedroom Single Beds",
-      "upperLevelApartmentBathroom": "Upper Level Apartment Bathroom",
-      "upperLevelApartmentExteriorLights": "Upper Level Apartment Exterior Lights"
-    }
-  },
   "contact": {
     "title": "Want to Book Your Stay?",
     "contactInfo": {
       "contactInformation": "Contact Information",
       "address": "Address",
-      "addressValue": "Lazara Lazarevića 27, Stolac, Bosnia and Herzegovina",
+      "addressValue": "Lazara Lazarevića 27, Stolac",
       "phone": "Phone",
       "email": "Email",
       "location": "Location",
       "googleMaps": "Google Maps",
-      "appleMaps": "Apple Maps"
+      "appleMaps": "Apple Maps",
+      "contactUs": "Contact Us",
+      "country": "Bosnia and Herzegovina"
     },
     "contactForm": {
       "title": "Use the form below to contact us about your stay. We will get back to you within a few hours with all the details you need!",
@@ -253,13 +255,16 @@
   },
   "header": {
     "home": "Home",
-    "amenities": "Amenities",
     "gallery": "Gallery",
+    "amenities": "Amenities",
+    "attractions": "Attractions",
     "contact": "Contact"
   },
   "footer": {
-    "title": " Footer",
-    "description": " Footer page"
+    "description1": "At Apartment Relax Stolac, we believe that every guest deserves a perfect stay. Our modern, fully-equipped apartments offer the perfect blend of comfort and convenience, set against the stunning backdrop of Stolac's natural beauty.",
+    "description2": "Whether you're seeking a peaceful retreat or an adventure-filled holiday, our apartments provide the ideal base for exploring the rich history and natural wonders of Herzegovina. We take pride in ensuring your stay is memorable, comfortable, and truly relaxing.",
+    "description3": "From the moment you arrive, you'll experience our warm hospitality and attention to detail. We're here to make your stay in Stolac exceptional in every way.",
+    "copyright": "Apartment Relax Stolac © {year} All rights reserved"
   },
   "common": {
     "instantReservation": "Instant reservation",

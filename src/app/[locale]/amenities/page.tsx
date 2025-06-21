@@ -1,5 +1,4 @@
 import Amenities from "@/components/Amenities";
-import CityAttractions from "@/components/CityAttractions";
 
 const AmenitiesPage = () => {
   return (
@@ -7,9 +6,6 @@ const AmenitiesPage = () => {
       <div className="container px-4">
         {/* Amenities Section */}
         <Amenities />
-
-        {/* City Attractions */}
-        <CityAttractions />
       </div>
     </section>
   );

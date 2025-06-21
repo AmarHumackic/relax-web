@@ -1,6 +1,11 @@
+import { LINKS } from "@/constants/links";
+import { useTranslations } from "next-intl";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
+  const tContact = useTranslations("contact.contactInfo");
+  const tFooter = useTranslations("footer");
+
   return (
     <footer className="relative mt-16 bg-[#FCFCFC] pt-16 pb-8">
       {/* Decorative top border */}
@@ -10,7 +15,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Contact Info */}
           <div>
-            <h3 className="mb-6 text-xl font-bold text-gray-900">Contact Us</h3>
+            <h3 className="mb-6 text-xl font-bold text-gray-900">
+              {tContact("contactUs")}
+            </h3>
             <ul className="space-y-4">
               <li className="flex items-center">
                 <span className="text-primary mr-3">
@@ -30,7 +37,7 @@ const Footer = () => {
                   </svg>
                 </span>
                 <span className="text-base text-gray-600">
-                  Stolac, Bosnia and Herzegovina
+                  {`Stolac, ${tContact("country")}`}
                 </span>
               </li>
               <li className="flex items-center">
@@ -51,10 +58,10 @@ const Footer = () => {
                   </svg>
                 </span>
                 <a
-                  href={`tel:+387 61 422 877`}
+                  href={`tel:${LINKS.phone}`}
                   className="text-base text-gray-600 hover:underline"
                 >
-                  +387 61 422 877
+                  {LINKS.phone}
                 </a>
               </li>
               <li className="flex items-center">
@@ -75,17 +82,17 @@ const Footer = () => {
                   </svg>
                 </span>
                 <a
-                  href={`mailto:relax.stolac@gmail.com`}
+                  href={`mailto:${LINKS.email}`}
                   className="text-base text-gray-600 hover:underline"
                 >
-                  relax.stolac@gmail.com
+                  {LINKS.email}
                 </a>
               </li>
             </ul>
             {/* Social Media Links */}
             <div className="mt-6 flex items-center space-x-4">
               <a
-                href="https://www.facebook.com/relaxstolac"
+                href={LINKS.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:border-primary hover:bg-primary flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition hover:text-white"
@@ -93,7 +100,7 @@ const Footer = () => {
                 <FaFacebookF className="h-4 w-4" />
               </a>
               <a
-                href="https://www.instagram.com/relaxstolac"
+                href={LINKS.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:border-primary hover:bg-primary flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition hover:text-white"
@@ -106,27 +113,9 @@ const Footer = () => {
           {/* Welcome Message */}
           <div className="lg:col-span-2">
             <div className="space-y-4 text-gray-600">
-              <p>
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                At Apartment Relax Stolac, we believe that every guest deserves
-                a perfect stay. Our modern, fully-equipped apartments offer the
-                perfect blend of comfort and convenience, set against the
-                stunning backdrop of Stolac&apos;s natural beauty.
-              </p>
-              <p>
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Whether you're seeking a peaceful retreat or an adventure-filled
-                holiday, our apartments provide the ideal base for exploring the
-                rich history and natural wonders of Herzegovina. We take pride
-                in ensuring your stay is memorable, comfortable, and truly
-                relaxing.
-              </p>
-              <p>
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                From the moment you arrive, you'll experience our warm
-                hospitality and attention to detail. We&apos;re here to make
-                your stay in Stolac exceptional in every way.
-              </p>
+              <p>{tFooter("description1")}</p>
+              <p>{tFooter("description2")}</p>
+              <p>{tFooter("description3")}</p>
             </div>
           </div>
         </div>
@@ -134,8 +123,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-12 border-t border-gray-200 pt-8">
           <p className="text-center text-base text-gray-600">
-            Apartment Relax Stolac © {new Date().getFullYear()} All rights
-            reserved
+            {tFooter("copyright", { year: new Date().getFullYear() })}
           </p>
         </div>
       </div>
