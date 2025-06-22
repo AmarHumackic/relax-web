@@ -20,7 +20,7 @@
       },
       "upperLevel": {
         "title": "Upper Level Apartment (3 bedrooms)",
-        "description": "Situated on the upper floor, this bright and comfortable apartment offers peace and privacy in a quiet neighborhood with friendly locals. It features a private parking spot, a large balcony ideal for relaxing, and stunning views of the surrounding hills and gardens. The interior includes a fully equipped kitchen, a cozy living area, and multiple sleeping arrangements perfect for families or groups.",
+        "description": "Situated on the upper floor, this bright and comfortable apartment offers peace and privacy in a quiet neighborhood with friendly locals. It features a private parking spot, a large balcony and a spacious terrace ideal for relaxing, with stunning views of the surrounding hills and gardens. The interior includes a fully equipped kitchen, a cozy living area, and multiple sleeping arrangements perfect for families or groups.",
         "rooms": {
           "0": "3 bedrooms",
           "1": "1 living room",
@@ -170,7 +170,7 @@
       },
       "bregava": {
         "title": "River Bregava",
-        "description": "Historic mills and the unique Ćuprija bridge with uneven arches stand along Bregava river in Stolac, where locals also swim and relax."
+        "description": "Crystal-clear Bregava river flows through Stolac, lined with numerous bridges and natural swimming spots that locals and visitors enjoy all summer long."
       },
       "provalijeWaterfall": {
         "title": "Provalije Waterfall",
@@ -285,7 +285,7 @@
       "kitchen": "Fully Equipped Kitchen",
       "balcony": "Private Balcony",
       "privateBathroom": "Private Bathroom",
-      "view": "Mountain View",
+      "view": "Nature View",
       "safeBox": "Safe box",
       "smokeAlarm": "Smoke alarm",
       "selfCheckIn": "Self check-in",
