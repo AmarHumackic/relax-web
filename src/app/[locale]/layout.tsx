@@ -9,6 +9,15 @@ import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  alternates: {
+    languages: {
+      en: "/en",
+      bs: "/bs",
+    },
+  },
+};
+
 export default async function RootLayout({
   children,
   params,
