@@ -11,7 +11,7 @@ export default function ContactInfo() {
   return (
     <section className="shadow-three rounded-2xl bg-white p-8">
       <h3 className="text-primary mb-4 text-xl font-bold">
-        Contact Information
+        {tContactInfo("contactInformation")}
       </h3>
       <ul className="text-body-color mb-6 space-y-3 text-base">
         <li>

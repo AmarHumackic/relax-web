@@ -48,7 +48,7 @@ export default function AirbnbBtn({ isHeader = false }: AirbnbBtnProps) {
     <div className="group airbnb-dropdown relative">
       <button
         onClick={handleAirbnbDropdown}
-        className={`${!isHeader ? "sm:min-w-54 md:min-w-62" : ""} ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-xs px-4 py-3 text-base font-medium whitespace-nowrap text-white transition duration-300 xl:px-6`}
+        className={`${!isHeader ? "sm:min-w-54 md:min-w-62 xl:px-6" : "xl:px-3"} ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-xs px-4 py-3 text-base font-medium whitespace-nowrap text-white transition duration-300`}
       >
         <Image
           src="/images/hero/airbnb-logo.svg"

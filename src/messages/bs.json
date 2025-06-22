@@ -161,7 +161,7 @@
         "description": "UNESCO nekropole u blizini Stoca, poput Radimlje i Boljuna, datiraju iz 13-16. stoljeća i povezane su s legendama, ritualima liječenja i lokalnim tradicijama."
       },
       "daorson": {
-        "title": "Ilirska gradina Daorson",
+        "title": "Ilirski grad Daorson",
         "description": "Daorson, drevni grad Daorsa, cvjetao je u 3-2. st. p.n.e. Utvrđen kiklopskim zidovima, uništen je oko 50. godine p.n.e. i nikad nije obnovljen."
       },
       "badanjCave": {
@@ -181,12 +181,12 @@
         "description": "Otkrijte skrivenu ljepotu vodopada Pjene u Stocu - gdje se prirodna tišina susreće s kaskadnim vodama u savršenom okruženju za mirne bijege."
       },
       "riverMills": {
-        "title": "Naslijeđe riječnih mlinova",
+        "title": "Riječni mlinovi",
         "description": "Povijesni mlinovi i valjaonice uz rijeku Bregavu oblikovali su stolačku ekonomiju od 15. stoljeća, s 12 mjesta još uvijek sačuvanih danas."
       },
       "cuprijaBridge": {
-        "title": "Most Ćuprija",
-        "description": "Most Ćuprija, vjerojatno srednjovjekovni, stoji u Stocu s nepravilnim lukovima izgrađenim iz inata u 17. stoljeću - što mu je donijelo nadimak \"Inat most\"."
+        "title": "Inat ćuprija",
+        "description": "Inat Ćuprija, vjerojatno srednjovjekovni, stoji u Stocu s nepravilnim lukovima izgrađenim iz inata u 17. stoljeću - što mu je donijelo nadimak \"Inat ćuprija\"."
       },
       "saraBridge": {
         "title": "Sarin most",
@@ -205,7 +205,7 @@
         "description": "Pravoslavna crkva sv. Petra i Pavla iz 1505. godine u Ošanjićima odaje počast vojvodi Radosavu Hrabrenu, čiji sudske stolice simboliziraju stolačko feudalno naslijeđe i moć."
       },
       "tekke": {
-        "title": "Tekija Naqshbandi",
+        "title": "Nakšibendijska tekija",
         "description": "Stolačka tekija je duhovni i kulturni centar na rijeci Bregavi, koji prikazuje bogato sufijsko naslijeđe i prepoznatljivu osmansku arhitekturu."
       },
       "makHouse": {
@@ -213,8 +213,8 @@
         "description": "Mak Dizdar, veliki bosanski pjesnik rođen u Stocu, poštovan je muzejem Makova kuća i Fondacijom, koja slavi njegov život, rad i srednjovjekovnu umjetnost stećaka."
       },
       "waterFountains": {
-        "title": "Vodene fontane",
-        "description": "Stolačko vodeno naslijeđe obuhvaća drevne kamenite rezervoare, osmanske fontane i prvi vodovod iz 1908. godine, s mnogim javnim fontanama koje još uvijek osvježavaju lokalno stanovništvo."
+        "title": "Gradske česme",
+        "description": "Stolačko vodeno naslijeđe obuhvaća drevne kamenite rezervoare, osmanske fontane i prvi vodovod iz 1908. godine, s mnogim javnim česmama koje još uvijek osvježavaju lokalno stanovništvo."
       }
     }
   },
@@ -227,30 +227,30 @@
       "phone": "Telefon",
       "email": "Email",
       "location": "Lokacija",
-      "googleMaps": "Google Maps",
-      "appleMaps": "Apple Maps",
+      "googleMaps": "Google Karte",
+      "appleMaps": "Apple Karte",
       "contactUs": "Kontaktirajte nas",
       "country": "Bosna i Hercegovina"
     },
     "contactForm": {
-      "title": "Koristite obrazac ispod da nas kontaktirate u vezi s vašim boravkom. Odgovorit ćemo vam u roku od nekoliko sati sa svim detaljima koji vam trebaju!",
-      "fullName": "Puno ime",
-      "fullNamePlaceholder": "Unesite vaše puno ime",
+      "title": "Koristite obrazac ispod da nas kontaktirate u vezi s vašim boravkom. Odgovorit ćemo vam u roku od nekoliko sati sa svim potrebnim detaljima!",
+      "fullName": "Ime i prezime",
+      "fullNamePlaceholder": "Unesite vaše puno ime i prezime",
       "email": "Email",
       "emailPlaceholder": "Unesite vašu email adresu",
-      "checkIn": "Check-in",
-      "checkInPlaceholder": "Odaberite datum check-in",
-      "checkOut": "Check-out",
-      "checkOutPlaceholder": "Odaberite datum check-out",
+      "checkIn": "Datum prijave",
+      "checkInPlaceholder": "Odaberite datum prijave",
+      "checkOut": "Datum odjave",
+      "checkOutPlaceholder": "Odaberite datum odjave",
       "apartment": "Apartman",
       "numOfPersons": "Broj osoba",
       "message": "Poruka",
       "messagePlaceholder": "Napišite vašu poruku ili posebne zahtjeve...",
       "sending": "Slanje...",
       "sendEnquiry": "Pošaljite upit",
-      "dateError": "Datum check-out ne može biti prije datuma check-in",
+      "dateError": "Datum odjave ne može biti prije datuma prijave",
       "enquirySuccess": "Hvala vam na upitu! Odgovorit ćemo vam u roku od nekoliko sati.",
-      "enquiryError": "Nešto je pošlo naopako. Molimo pokušajte ponovo kasnije."
+      "enquiryError": "Greška pri slanju upita. Molimo pokušajte ponovo kasnije."
     }
   },
   "header": {
@@ -267,7 +267,7 @@
     "copyright": "Relax Apartmani Stolac © {year} Sva prava zadržana"
   },
   "common": {
-    "instantReservation": "Trenutna rezervacija",
+    "instantReservation": "Rezervacija bez čekanja",
     "bookOnBooking": "Rezerviši na Booking.com",
     "bookOnAirbnb": "Rezerviši na Airbnb",
     "or": "ili",
@@ -288,7 +288,7 @@
       "view": "Pogled na planine",
       "safeBox": "Sef",
       "smokeAlarm": "Detektor dima",
-      "selfCheckIn": "Samo check-in",
+      "selfCheckIn": "Samostalna prijava",
       "lockBox": "Sigurnosna kutija",
       "outdoorHangingSwing": "Vanjska viseća ljuljaška",
       "outdoorDiningArea": "Vanjski prostor za jelo",
