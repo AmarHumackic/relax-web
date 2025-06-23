@@ -7,9 +7,7 @@ import "../../styles/index.css";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import LocalBusinessStructuredData from "@/components/LocalBusinessStructuredData";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
-import { LINKS } from "@/constants/links";
+import { SEO_BUSINESS } from "@/constants/SEO_BUSINESS";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +18,7 @@ export const metadata: Metadata = {
       "Relax Apartments Stolac - Comfortable Stay in Bosnia and Herzegovina",
     template: "%s | Relax Apartments Stolac",
   },
-  description:
-    "Relax Apartments offers two comfortable and modern apartments with a spacious terrace, private parking, and a rose-filled garden. Ideally located in the city center of Stolac, perfect for exploring Herzegovina.",
+  description: SEO_BUSINESS.description,
   keywords: [
     "apartments stolac",
     "accommodation stolac",
@@ -34,9 +31,9 @@ export const metadata: Metadata = {
     "stolac attractions",
     "herzegovina tourism",
   ],
-  authors: [{ name: "Relax Apartments Stolac" }],
-  creator: "Relax Apartments Stolac",
-  publisher: "Relax Apartments Stolac",
+  authors: [{ name: SEO_BUSINESS.name }],
+  creator: SEO_BUSINESS.name,
+  publisher: SEO_BUSINESS.name,
   formatDetection: {
     email: false,
     address: false,
@@ -53,28 +50,26 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en",
     alternateLocale: "bs",
-    url: "https://relaxstolac.com/en",
-    siteName: "Relax Apartments Stolac",
-    title:
-      "Relax Apartments Stolac - Comfortable Stay in Bosnia and Herzegovina",
-    description:
-      "Relax Apartments offers two comfortable and modern apartments with a spacious terrace, private parking, and a rose-filled garden. Ideally located in the city center of Stolac, perfect for exploring Herzegovina.",
+    url: SEO_BUSINESS.url,
+    siteName: SEO_BUSINESS.name,
+    title: SEO_BUSINESS.name + " - Comfortable Stay in Bosnia and Herzegovina",
+    description: SEO_BUSINESS.description,
     images: [
       {
-        url: "/images/gallery/all/1.webp",
+        url: SEO_BUSINESS.image[0],
         width: 1200,
         height: 630,
-        alt: "Relax Apartments Stolac - Comfortable accommodation in the heart of Stolac",
+        alt:
+          SEO_BUSINESS.name +
+          " - Comfortable accommodation in the heart of Stolac",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Relax Apartments Stolac - Comfortable Stay in Bosnia and Herzegovina",
-    description:
-      "Relax Apartments offers two comfortable and modern apartments with a spacious terrace, private parking, and a rose-filled garden. Ideally located in the city center of Stolac, perfect for exploring Herzegovina.",
-    images: ["/images/gallery/all/1.webp"],
+    title: SEO_BUSINESS.name + " - Comfortable Stay in Bosnia and Herzegovina",
+    description: SEO_BUSINESS.description,
+    images: [SEO_BUSINESS.image[0]],
     creator: "@relaxstolac",
   },
   robots: {
@@ -132,81 +127,20 @@ export default async function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
 
-        {/* Structured Data */}
+        {/* LodgingBusiness Structured Data - SVE IZ JEDNOG CENTRALNOG MJESTA */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Hotel",
-              name: "Relax Apartments Stolac",
-              description:
-                "Relax Apartments offers two comfortable and modern apartments with a spacious terrace, private parking, and a rose-filled garden. Ideally located in the city center of Stolac, perfect for exploring Herzegovina.",
-              url: "https://relaxstolac.com/en",
-              telephone: LINKS.phone,
-              email: LINKS.email,
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Lazara Lazarevića 27",
-                addressLocality: "Stolac",
-                addressCountry: "BA",
-                postalCode: "88360",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: "43.082923",
-                longitude: "17.961159",
-              },
-              image: [
-                "https://relaxstolac.com/images/gallery/all/1.webp",
-                "https://relaxstolac.com/images/gallery/all/2.webp",
-                "https://relaxstolac.com/images/gallery/all/3.webp",
-              ],
-              amenityFeature: [
-                {
-                  "@type": "LocationFeatureSpecification",
-                  name: "WiFi",
-                  value: true,
-                },
-                {
-                  "@type": "LocationFeatureSpecification",
-                  name: "Air Conditioning",
-                  value: true,
-                },
-                {
-                  "@type": "LocationFeatureSpecification",
-                  name: "Private Parking",
-                  value: true,
-                },
-                {
-                  "@type": "LocationFeatureSpecification",
-                  name: "Garden",
-                  value: true,
-                },
-                {
-                  "@type": "LocationFeatureSpecification",
-                  name: "Terrace",
-                  value: true,
-                },
-              ],
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "5.0",
-                reviewCount: "15",
-              },
-              priceRange: "$$",
-              currenciesAccepted: "EUR, BAM",
-              paymentAccepted: "Cash, Credit Card, Bank Transfer",
+              "@type": "LodgingBusiness",
+              ...SEO_BUSINESS,
             }),
           }}
         />
-
-        {/* Local Business Structured Data */}
-        <LocalBusinessStructuredData />
       </head>
 
       <body className={`bg-[#FCFCFC] ${inter.className}`}>
-        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
         <NextIntlClientProvider>
           <Header />
           {children}
