@@ -127,7 +127,7 @@ export default async function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
 
-        {/* LodgingBusiness Structured Data - SVE IZ JEDNOG CENTRALNOG MJESTA */}
+        {/* LodgingBusiness Structured Data - everything in one place */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
