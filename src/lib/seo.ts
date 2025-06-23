@@ -40,7 +40,7 @@ export function generateMetadata(
           alt: config.title,
         },
       ],
-      locale: locale === "en" ? "en_US" : "bs_BA",
+      locale,
       type: config.type || "website",
     },
     twitter: {
