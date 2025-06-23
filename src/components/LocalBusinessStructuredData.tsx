@@ -26,7 +26,7 @@ export default function LocalBusinessStructuredData() {
     openingHours: "Mo-Su 08:00-22:00",
     priceRange: "$$",
     currenciesAccepted: "EUR, BAM",
-    paymentAccepted: "Cash, Credit Card, Bank Transfer",
+    paymentAccepted: "Cash",
     image: [
       "https://relaxstolac.com/images/gallery/all/1.webp",
       "https://relaxstolac.com/images/gallery/all/2.webp",
