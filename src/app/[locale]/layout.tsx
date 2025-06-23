@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import LocalBusinessStructuredData from "@/components/LocalBusinessStructuredData";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { LINKS } from "@/constants/links";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -142,8 +143,8 @@ export default async function RootLayout({
               description:
                 "Relax Apartments offers two comfortable and modern apartments with a spacious terrace, private parking, and a rose-filled garden. Ideally located in the city center of Stolac, perfect for exploring Herzegovina.",
               url: "https://relaxstolac.com/en",
-              telephone: "+387-XX-XXX-XXX",
-              email: "info@relaxstolac.com",
+              telephone: LINKS.phone,
+              email: LINKS.email,
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Lazara Lazarevića 27",
@@ -153,8 +154,8 @@ export default async function RootLayout({
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: "43.0844",
-                longitude: "17.9589",
+                latitude: "43.082923",
+                longitude: "17.961159",
               },
               image: [
                 "https://relaxstolac.com/images/gallery/all/1.webp",

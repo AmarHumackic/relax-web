@@ -1,3 +1,5 @@
+import { LINKS } from "@/constants/links";
+
 export default function LocalBusinessStructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
@@ -6,8 +8,8 @@ export default function LocalBusinessStructuredData() {
     description:
       "Relax Apartments offers two comfortable and modern apartments with a spacious terrace, private parking, and a rose-filled garden. Ideally located in the city center of Stolac, perfect for exploring Herzegovina.",
     url: "https://relaxstolac.com/en",
-    telephone: "+387-XX-XXX-XXX",
-    email: "info@relaxstolac.com",
+    telephone: LINKS.phone,
+    email: LINKS.email,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Lazara Lazarevića 27",
