@@ -1,4 +1,20 @@
 import Amenities from "@/components/Amenities";
+import { Metadata } from "next";
+import {
+  generateMetadata as generateSEOMetadata,
+  pageMetadata,
+} from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const metadata =
+    pageMetadata.amenities[locale as keyof typeof pageMetadata.amenities];
+  return generateSEOMetadata(metadata, locale);
+}
 
 const AmenitiesPage = () => {
   return (

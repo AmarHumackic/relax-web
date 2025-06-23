@@ -1,5 +1,21 @@
 import PhotoGallery from "@/components/PhotoGallery";
 import { useTranslations } from "next-intl";
+import { Metadata } from "next";
+import {
+  generateMetadata as generateSEOMetadata,
+  pageMetadata,
+} from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const metadata =
+    pageMetadata.gallery[locale as keyof typeof pageMetadata.gallery];
+  return generateSEOMetadata(metadata, locale);
+}
 
 const GalleryPage = () => {
   const tGallery = useTranslations("gallery");

@@ -1,21 +1,30 @@
 import { Metadata } from "next";
-import { useTranslations } from "next-intl";
 import Hero from "@/components/Hero";
 import ApartmentsInfo from "@/components/ApartmentsInfo";
 import LocationMap from "@/components/LocationMap";
 import Reviews from "@/components/Reviews";
 import Faq from "@/components/Faq";
+import {
+  generateMetadata as generateSEOMetadata,
+  pageMetadata,
+} from "@/lib/seo";
+import FAQStructuredData from "@/components/FAQStructuredData";
 
-export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
-  // other metadata
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const metadata = pageMetadata.home[locale as keyof typeof pageMetadata.home];
+  return generateSEOMetadata(metadata, locale);
+}
 
 export default function HomePage() {
-  const t = useTranslations("home");
   return (
     <main>
+      {/* FAQ Structured Data for SEO */}
+      <FAQStructuredData />
       {/* HERO SECTION */}
       <Hero />
 

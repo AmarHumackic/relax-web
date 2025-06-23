@@ -2,6 +2,22 @@ import "react-datepicker/dist/react-datepicker.css";
 import ContactInfo from "@/components/ContactInfo";
 import ContactForm from "@/components/ContactForm";
 import { useTranslations } from "next-intl";
+import { Metadata } from "next";
+import {
+  generateMetadata as generateSEOMetadata,
+  pageMetadata,
+} from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const metadata =
+    pageMetadata.contact[locale as keyof typeof pageMetadata.contact];
+  return generateSEOMetadata(metadata, locale);
+}
 
 export default function ContactPage() {
   const tContact = useTranslations("contact");
