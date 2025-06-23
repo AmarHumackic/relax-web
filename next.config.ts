@@ -78,17 +78,12 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/home",
-        destination: "/en",
+        destination: "/",
         permanent: true,
       },
       {
         source: "/index",
-        destination: "/en",
-        permanent: true,
-      },
-      {
-        source: "/",
-        destination: "/en",
+        destination: "/",
         permanent: true,
       },
     ];

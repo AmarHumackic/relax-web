@@ -2,7 +2,7 @@
   "name": "Relax Apartments Stolac",
   "short_name": "Relax Stolac",
   "description": "Comfortable apartments in the heart of Stolac, Bosnia and Herzegovina",
-  "start_url": "/en",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#FCFCFC",
   "theme_color": "#ffffff",

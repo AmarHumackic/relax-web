@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /
-Allow: /en/
+Allow: /
 Allow: /bs/
 Sitemap: https://relaxstolac.com/sitemap.xml

@@ -21,9 +21,9 @@ export function generateMetadata(
     description: config.description,
     keywords: config.keywords,
     alternates: {
-      canonical: `${baseUrl}${config.url || ""}`,
+      canonical: `${baseUrl}${config.url === "/bs" ? "/bs" : config.url === "/en" || config.url === "" ? "" : config.url || ""}`,
       languages: {
-        en: `${baseUrl}/en${config.url?.replace("/en", "").replace("/bs", "") || ""}`,
+        en: `${baseUrl}${config.url === "/bs" ? "" : config.url?.replace("/en", "").replace("/bs", "") || ""}`,
         bs: `${baseUrl}/bs${config.url?.replace("/en", "").replace("/bs", "") || ""}`,
       },
     },
@@ -72,7 +72,7 @@ export const pageMetadata = {
         "stolac tourism",
         "bosnia herzegovina travel",
       ],
-      url: "/en",
+      url: "/",
     },
     bs: {
       title: "Relax Apartmani Stolac - Udoban boravak u Bosni i Hercegovini",
@@ -103,7 +103,7 @@ export const pageMetadata = {
         "herzegovina apartments pictures",
         "stolac tourism photos",
       ],
-      url: "/en/gallery",
+      url: "/gallery",
       image: "/images/gallery/all/1.webp",
     },
     bs: {
@@ -133,7 +133,7 @@ export const pageMetadata = {
         "herzegovina apartments wifi",
         "stolac apartments parking",
       ],
-      url: "/en/amenities",
+      url: "/amenities",
     },
     bs: {
       title: "Sadržaji apartmana - Relax Apartmani Stolac",
@@ -164,7 +164,7 @@ export const pageMetadata = {
         "stolac tourism",
         "herzegovina attractions",
       ],
-      url: "/en/attractions",
+      url: "/attractions",
     },
     bs: {
       title: "Stolačke atrakcije - Šta vidjeti i raditi - Relax Apartmani",
@@ -195,7 +195,7 @@ export const pageMetadata = {
         "relax apartments contact",
         "stolac apartments reservation",
       ],
-      url: "/en/contact",
+      url: "/contact",
     },
     bs: {
       title:

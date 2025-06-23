@@ -8,32 +8,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const sitemap: MetadataRoute.Sitemap = [];
 
-  // Add pages for each locale
-  locales.forEach((locale) => {
-    pages.forEach((page) => {
-      const url = `/${locale}${page}`;
-      sitemap.push({
-        url: `${baseUrl}${url}`,
-        lastModified: new Date(),
-        changeFrequency: "weekly",
-        priority: page === "" ? 1 : 0.8,
-        alternates: {
-          languages: {
-            en: `${baseUrl}/en${page}`,
-            bs: `${baseUrl}/bs${page}`,
-          },
+  // ENGLISH pages (root)
+  pages.forEach((page) => {
+    const url = `${baseUrl}${page}`;
+    sitemap.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: page === "" ? 1 : 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}${page}`,
+          bs: `${baseUrl}/bs${page}`,
         },
-      });
+      },
     });
   });
 
-  // Add root redirect page
-  sitemap.push({
-    url: `${baseUrl}/`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.5,
+  // BOSNIAN pages
+  pages.forEach((page) => {
+    const url = `${baseUrl}/bs${page}`;
+    sitemap.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: page === "" ? 1 : 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}${page}`,
+          bs: `${baseUrl}/bs${page}`,
+        },
+      },
+    });
   });
+
+  // Add root redirect page (optional, can be omitted if root is now main EN)
+  // sitemap.push({
+  //   url: `${baseUrl}/`,
+  //   lastModified: new Date(),
+  //   changeFrequency: "monthly",
+  //   priority: 0.5,
+  // });
 
   return sitemap;
 }

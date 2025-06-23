@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: "/en",
+    canonical: "/",
     languages: {
-      en: "/en",
+      en: "/",
       bs: "/bs",
     },
   },

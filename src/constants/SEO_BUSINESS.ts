@@ -4,7 +4,7 @@ export const SEO_BUSINESS = {
   name: "Relax Apartments Stolac",
   description:
     "Relax Apartments offers two comfortable and modern apartments with a spacious terrace, private parking, and a rose-filled garden. Ideally located in the city center of Stolac, perfect for exploring Herzegovina.",
-  url: "https://relaxstolac.com/en",
+  url: "https://relaxstolac.com/",
   telephone: LINKS.phone,
   email: LINKS.email,
   address: {
