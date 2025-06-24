@@ -22,6 +22,7 @@ import {
 } from "react-icons/md";
 import { GiWashingMachine } from "react-icons/gi";
 import { PiVaultBold } from "react-icons/pi";
+import { FiArrowDown } from "react-icons/fi";
 
 export default function AmenityIcon({ icon }: { icon: string }) {
   switch (icon) {
