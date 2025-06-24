@@ -1,6 +1,7 @@
 import { LINKS } from "@/constants/links";
 import { useTranslations } from "next-intl";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { SiViber, SiWhatsapp } from "react-icons/si";
 
 const Footer = () => {
   const tContact = useTranslations("contact.contactInfo");
@@ -56,6 +57,20 @@ const Footer = () => {
                   className="text-base text-gray-600 hover:underline"
                 >
                   {LINKS.phone}
+                </a>
+                <a
+                  href={`viber://chat?number=${LINKS.phone}`}
+                  className="text-primary ml-2"
+                  aria-label="Open Viber chat"
+                >
+                  <SiViber size={22} color="#665CAC" />
+                </a>
+                <a
+                  href={`https://wa.me/${LINKS.phone}`}
+                  className="text-primary ml-2"
+                  aria-label="Open WhatsApp chat"
+                >
+                  <SiWhatsapp size={22} color="#25D366" />
                 </a>
               </li>
               <li className="flex items-center">

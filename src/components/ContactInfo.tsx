@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import BookingBtn from "./BookingBtn";
 import AirbnbBtn from "./AirbnbBtn";
+import { SiViber, SiWhatsapp } from "react-icons/si";
 
 export default function ContactInfo() {
   const tContactInfo = useTranslations("contact.contactInfo");
@@ -18,13 +19,27 @@ export default function ContactInfo() {
           <strong>{`${tContactInfo("address")}:`}</strong>{" "}
           {`${tContactInfo("addressValue")}, ${tContactInfo("country")}`}
         </li>
-        <li>
+        <li className="flex items-center">
           <strong>{`${tContactInfo("phone")}:`}</strong>{" "}
           <a
             href={`tel:${LINKS.phone}`}
             className="text-primary hover:underline"
           >
             {LINKS.phone}
+          </a>
+          <a
+            href={`viber://chat?number=${LINKS.phone}`}
+            className="text-primary ml-2"
+            aria-label="Open Viber chat"
+          >
+            <SiViber size={22} color="#665CAC" />
+          </a>
+          <a
+            href={`https://wa.me/${LINKS.phone}`}
+            className="text-primary ml-2"
+            aria-label="Open WhatsApp chat"
+          >
+            <SiWhatsapp size={22} color="#25D366" />
           </a>
         </li>
         <li>
