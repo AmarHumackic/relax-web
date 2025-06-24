@@ -129,6 +129,8 @@ const Header = () => {
                               viewBox="0 0 25 24"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true"
+                              focusable="false"
                             >
                               <path
                                 d="M9.5 18L15.5 12L9.5 6"
@@ -235,6 +237,8 @@ const Header = () => {
                               viewBox="0 0 25 24"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true"
+                              focusable="false"
                             >
                               <path
                                 d="M9.5 18L15.5 12L9.5 6"

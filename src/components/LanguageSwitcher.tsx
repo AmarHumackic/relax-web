@@ -27,6 +27,8 @@ export default function LanguageSwitcher() {
           width="32"
           height="32"
           viewBox="0 0 32 32"
+          role="img"
+          aria-label="Change language to English"
         >
           <rect
             x="1"
@@ -89,6 +91,8 @@ export default function LanguageSwitcher() {
           width="32"
           height="32"
           viewBox="0 0 32 32"
+          role="img"
+          aria-label="Change language to Bosnian"
         >
           <rect
             x="1"

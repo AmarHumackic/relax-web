@@ -67,6 +67,8 @@ export default function AirbnbBtn({ isHeader = false }: AirbnbBtnProps) {
           className={`transition-transform duration-200 ${
             airbnbDropdownOpen ? "rotate-180" : ""
           }`}
+          aria-hidden="true"
+          focusable="false"
         >
           <path
             d="M6 9L12 15L18 9"

@@ -26,8 +26,8 @@ const Footer = () => {
                     height="20"
                     viewBox="0 0 20 20"
                     fill="none"
-                    role="img"
-                    aria-label="Location icon"
+                    aria-hidden="true"
+                    focusable="false"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -47,8 +47,8 @@ const Footer = () => {
                     height="20"
                     viewBox="0 0 20 20"
                     fill="none"
-                    role="img"
-                    aria-label="Phone icon"
+                    aria-hidden="true"
+                    focusable="false"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -71,8 +71,8 @@ const Footer = () => {
                     height="20"
                     viewBox="0 0 20 20"
                     fill="none"
-                    role="img"
-                    aria-label="Email icon"
+                    aria-hidden="true"
+                    focusable="false"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
