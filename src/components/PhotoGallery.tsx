@@ -4,15 +4,16 @@ import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { useTranslations } from "next-intl";
+import { CategoryTabKey } from "@/types/categories";
 
 const PhotoGallery = () => {
   const tGallery = useTranslations("gallery");
   const tCommon = useTranslations("common");
-  const [activeTab, setActiveTab] = useState("all");
+  const [activeTab, setActiveTab] = useState<CategoryTabKey>("all");
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  const categories = [
+  const categories: { key: CategoryTabKey; name: string }[] = [
     { key: "all", name: tCommon("tabs.all") },
     { key: "groundLevel", name: tCommon("tabs.groundLevel") },
     { key: "upperLevel", name: tCommon("tabs.upperLevel") },

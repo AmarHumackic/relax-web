@@ -1,21 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { JSX, useState } from "react";
 import AmenityIcon from "./AmenityIcon";
 import { useTranslations } from "next-intl";
+import { CategoryTabKey } from "@/types/categories";
+import ApartmentsInfoClient from "./ApartmentsInfoClient";
 
 export default function Amenities() {
   const tAmenities = useTranslations("amenities");
   const tCommon = useTranslations("common");
-  const [activeTab, setActiveTab] = useState("all");
+  const [activeTab, setActiveTab] = useState<CategoryTabKey>("all");
 
-  const categories = [
+  const categories: { key: CategoryTabKey; name: string }[] = [
     { key: "all", name: tCommon("tabs.all") },
     { key: "groundLevel", name: tCommon("tabs.groundLevel") },
     { key: "upperLevel", name: tCommon("tabs.upperLevel") },
   ];
 
-  const apartmentAmenities = [
+  const apartmentAmenities: {
+    icon: JSX.Element;
+    amenity: string;
+    apartment: CategoryTabKey;
+  }[] = [
     {
       icon: <AmenityIcon icon="parking" />,
       amenity: tCommon("amenitiesIcons.parking"),
@@ -136,7 +142,7 @@ export default function Amenities() {
       </h1>
 
       {/* Apartment Amenities */}
-      <div className="mb-16">
+      <div className="mb-8">
         {/* Tabs */}
         <div className="mb-8 flex justify-center space-x-4">
           {categories.map(({ key, name }) => (
@@ -169,6 +175,9 @@ export default function Amenities() {
           ))}
         </div>
       </div>
+
+      {/* Amenities Section */}
+      <ApartmentsInfoClient activeTab={activeTab} />
     </section>
   );
 }
