@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     "stolac attractions",
     "herzegovina tourism",
   ],
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   authors: [{ name: SEO_BUSINESS.name }],
   creator: SEO_BUSINESS.name,
   publisher: SEO_BUSINESS.name,
