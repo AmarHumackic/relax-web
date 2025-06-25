@@ -266,8 +266,8 @@ export default function ContactForm() {
         </button>
         {statusText && (
           <div
-            className={`mt-2 text-center font-medium text-${
-              status === "success" ? "green-600" : "red-600"
+            className={`mt-2 text-center font-medium ${
+              status === "success" ? "text-green-600" : "text-red-600"
             }`}
           >
             {statusText}
