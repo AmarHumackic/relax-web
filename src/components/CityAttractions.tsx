@@ -96,7 +96,7 @@ export default function CityAttractions() {
       <h1 className="text-primary mb-8 text-center text-3xl font-extrabold sm:text-4xl md:text-5xl">
         {tCityAttractions("title")}
       </h1>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5 lg:grid-cols-3 xl:grid-cols-4">
         {cityAttractions.map((attraction, index) => (
           <div
             key={index}

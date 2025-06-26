@@ -15,7 +15,7 @@ export default function ApartmentsInfoClient({
   return (
     <section className="bg-gray-50">
       <div
-        className={`container mx-auto ${activeTab === "all" ? "grid grid-cols-1" : "flex"} gap-8 px-4 md:grid-cols-2 md:px-0`}
+        className={`container mx-auto ${activeTab === "all" ? "grid grid-cols-1" : "flex"} gap-4 px-4 md:grid-cols-2 md:gap-5 md:px-0`}
       >
         {/* Ground Level Apartment */}
         {["all", "groundLevel"].includes(activeTab) ? (

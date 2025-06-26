@@ -28,7 +28,7 @@ export default function ContactPage() {
         <h1 className="text-primary mb-8 text-center text-3xl font-extrabold sm:text-4xl md:text-5xl">
           {tContact("title")}
         </h1>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
           {/* Contact Info Card */}
           <ContactInfo />
 

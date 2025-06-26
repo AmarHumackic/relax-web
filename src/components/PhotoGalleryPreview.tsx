@@ -32,7 +32,7 @@ const PhotoGalleryPreview = () => {
   return (
     <section className="bg-gray-50 pt-8 pb-4">
       <div className="container mx-auto px-4 md:px-0">
-        <div className="flex flex-col gap-4 md:flex-row md:gap-8">
+        <div className="flex flex-col gap-4 md:flex-row md:gap-5">
           {/* Portrait image on the left */}
           <div className="group relative w-full break-inside-avoid md:h-[500px] md:w-1/3">
             <Link
@@ -46,7 +46,7 @@ const PhotoGalleryPreview = () => {
                 title={images[0].room}
                 width={images[0].width}
                 height={images[0].height}
-                className="h-full w-full rounded-lg object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                className="h-full w-full rounded-lg object-cover transition-transform duration-300 ease-in-out group-hover:scale-103"
                 priority
               />
               <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -70,7 +70,7 @@ const PhotoGalleryPreview = () => {
                 title={images[1].room}
                 width={images[1].width}
                 height={images[1].height}
-                className="h-full w-full rounded-lg object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                className="h-full w-full rounded-lg object-cover transition-transform duration-300 ease-in-out group-hover:scale-103"
               />
               <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <p className="px-4 text-center text-lg font-bold text-white">
@@ -82,7 +82,7 @@ const PhotoGalleryPreview = () => {
         </div>
 
         {/* Contact Us Directly button below booking buttons */}
-        <div className="mx-auto mt-4 flex w-full max-w-lg justify-center md:mt-8">
+        <div className="mx-auto mt-4 flex w-full max-w-lg justify-center md:mt-5">
           <Link
             href="/gallery"
             className="ease-in-up shadow-btn hover:shadow-btn-hover hover:bg-primary/10 border-primary text-primary flex h-12 w-full items-center justify-center gap-2 rounded-xs border bg-white px-10 py-3.5 text-base font-medium transition duration-300 sm:w-auto"

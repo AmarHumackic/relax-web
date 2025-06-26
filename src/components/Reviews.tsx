@@ -96,7 +96,7 @@ export default function Reviews() {
           </button>
           <div
             ref={trackRef}
-            className="flex gap-6 px-1 py-2"
+            className="flex gap-4 px-1 py-2 md:gap-5"
             style={{ willChange: "transform", userSelect: "none" }}
           >
             {items.map(
