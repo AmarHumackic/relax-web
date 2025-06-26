@@ -9,6 +9,7 @@ import {
   pageMetadata,
 } from "@/lib/seo";
 import FAQStructuredData from "@/components/FAQStructuredData";
+import PhotoGalleryPreview from "@/components/PhotoGalleryPreview";
 
 export async function generateMetadata({
   params,
@@ -27,6 +28,9 @@ export default function HomePage() {
       <FAQStructuredData />
       {/* HERO SECTION */}
       <Hero />
+
+      {/* PHOTO GALLERY PREVIEW SECTION */}
+      <PhotoGalleryPreview />
 
       {/* APARTMENTS INFO SECTION */}
       <ApartmentsInfo />
