@@ -18,7 +18,7 @@ export async function generateMetadata({
 
 const AmenitiesPage = () => {
   return (
-    <section className="relative z-10 overflow-hidden bg-[#FCFCFC] pt-[160px] pb-16 md:pb-20 lg:pb-28">
+    <section className="relative z-10 overflow-hidden bg-[#FCFCFC] pt-[160px] pb-6">
       <div className="container mx-auto px-4 md:px-3">
         {/* Amenities Section */}
         <Amenities />
