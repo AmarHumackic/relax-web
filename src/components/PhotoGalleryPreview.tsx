@@ -31,8 +31,8 @@ const PhotoGalleryPreview = () => {
 
   return (
     <section className="bg-gray-50 pt-8 pb-4">
-      <div className="container mx-auto px-4 md:px-0">
-        <div className="flex flex-col gap-4 md:flex-row md:gap-5">
+      <div className="container mx-auto px-4 md:px-3">
+        <div className="flex flex-col gap-4 md:flex-row md:gap-8">
           {/* Portrait image on the left */}
           <div className="group relative w-full break-inside-avoid md:h-[500px] md:w-1/3">
             <Link
@@ -82,7 +82,7 @@ const PhotoGalleryPreview = () => {
         </div>
 
         {/* Contact Us Directly button below booking buttons */}
-        <div className="mx-auto mt-4 flex w-full max-w-lg justify-center md:mt-5">
+        <div className="mx-auto mt-4 flex w-full max-w-lg justify-center md:mt-8">
           <Link
             href="/gallery"
             className="ease-in-up shadow-btn hover:shadow-btn-hover hover:bg-primary/10 border-primary text-primary flex h-12 w-full items-center justify-center gap-2 rounded-xs border bg-white px-10 py-3.5 text-base font-medium transition duration-300 sm:w-auto"

@@ -5,11 +5,11 @@ export default function LocationMap() {
   const tLocation = useTranslations("home.location");
 
   return (
-    <section className="container mx-auto px-4 md:px-0">
+    <section className="container mx-auto px-4 md:px-3">
       <h3 className="text-primary mb-6 text-center text-2xl font-bold">
         {tLocation("title")}
       </h3>
-      <div className="mx-auto flex flex-col items-center gap-4 md:flex-row md:gap-5">
+      <div className="mx-auto flex flex-col items-center gap-4 md:flex-row md:gap-8">
         <div className="h-72 w-full flex-1 overflow-hidden rounded-xl">
           <iframe
             title="Apartment Relax Stolac map"

@@ -28,7 +28,7 @@ export default function ApartmentsInfo() {
 
   return (
     <section className="bg-gray-50 py-6 md:pt-10 md:pb-12">
-      <div className="container mx-auto grid grid-cols-1 gap-4 px-4 md:grid-cols-2 md:gap-5 md:px-0">
+      <div className="container mx-auto grid grid-cols-1 gap-4 px-4 md:grid-cols-2 md:gap-8 md:px-3">
         {/* Ground Level Apartment */}
         <div className="flex flex-col justify-between rounded-xl bg-white p-8 shadow-md">
           <h2 className="text-primary mb-2 text-2xl font-bold">
