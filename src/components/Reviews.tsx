@@ -58,9 +58,9 @@ export default function Reviews() {
   const items = [...reviews, ...reviews];
 
   return (
-    <section className="bg-white py-12">
+    <section className="bg-white pt-6 pb-6 md:pt-12 md:pb-12">
       <div className="container mx-auto px-4 md:px-3">
-        <h3 className="text-primary mb-6 text-center text-2xl font-bold">
+        <h3 className="text-primary mb-5 text-center text-2xl font-bold">
           {tReviews("title")}
         </h3>
 

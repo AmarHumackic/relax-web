@@ -4,7 +4,7 @@ export default function Faq() {
   const tFaq = useTranslations("home.faq");
 
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gray-50 pt-6 md:pt-12">
       <div className="container mx-auto px-4 md:px-3">
         <h3 className="text-primary mb-6 text-center text-2xl font-bold">
           {tFaq("title")}
