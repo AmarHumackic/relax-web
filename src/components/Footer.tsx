@@ -12,7 +12,7 @@ const Footer = () => {
       {/* Decorative top border */}
       <div className="from-primary/20 via-primary to-primary/20 absolute top-0 right-0 left-0 h-1 bg-gradient-to-r"></div>
 
-      <div className="container px-4">
+      <div className="container mx-auto px-4 md:px-0">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Contact Info */}
           <div>

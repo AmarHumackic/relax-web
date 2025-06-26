@@ -22,7 +22,7 @@ const GalleryPage = () => {
 
   return (
     <section className="relative z-10 overflow-hidden bg-[#FCFCFC] pt-[160px] pb-16 md:pb-20 lg:pb-28">
-      <div className="container px-4">
+      <div className="container mx-auto px-4 md:px-0">
         <h1 className="text-primary mb-8 text-center text-3xl font-extrabold sm:text-4xl md:text-5xl">
           {tGallery("title")}
         </h1>
