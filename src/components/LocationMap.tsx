@@ -12,7 +12,7 @@ export default function LocationMap() {
       <div className="mx-auto flex flex-col items-center gap-4 md:flex-row md:gap-8">
         <div className="h-72 w-full flex-1 overflow-hidden rounded-xl">
           <iframe
-            title="Apartment Relax Stolac map"
+            title="Relax Apartments Stolac map"
             src={LINKS.googleMaps}
             width="100%"
             height="100%"
