@@ -66,7 +66,7 @@ const Footer = () => {
                   <SiViber size={22} color="#665CAC" />
                 </a>
                 <a
-                  href={`https://wa.me/${LINKS.phone}`}
+                  href={`https://wa.me/${LINKS.whatsApp}`}
                   className="text-primary ml-2"
                   aria-label="Open WhatsApp chat"
                 >
