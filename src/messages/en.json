@@ -121,9 +121,9 @@
   "gallery": {
     "title": "Photo Gallery",
     "descriptions": {
-      "exteriorView": "Exterior View",
+      "exteriorView": "Apartment building facade",
       "exteriorViewBalcony": "Exterior View Balcony",
-      "exteriorViewNamePlate": "Building entrance with apartment name plate",
+      "exteriorViewNamePlate": "Apartment building exterior",
       "exteriorViewGarden": "Exterior View Garden",
       "exteriorViewOutdoorSink": "Exterior View Outdoor Sink",
       "groundLevelApartmentGarden": "Ground Level Apartment Garden",

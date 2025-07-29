@@ -30,9 +30,9 @@ export default function Hero() {
           <h2 className="text-primary/90 mb-6 text-lg leading-snug font-semibold md:text-2xl">
             {tHero("subtitle")}
           </h2>
-          <h6 className="text-base leading-relaxed font-normal text-gray-600 md:text-lg md:leading-8">
+          <h3 className="text-base leading-relaxed font-normal text-gray-600 md:text-lg md:leading-8">
             {tHero("description")}
-          </h6>
+          </h3>
         </div>
         {/* Instant reservation label above booking buttons */}
         <div className="mx-auto mb-2 w-full max-w-lg text-center">
