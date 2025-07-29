@@ -42,7 +42,7 @@ const PhotoGalleryPreview = () => {
             >
               <Image
                 src={images[0].src}
-                alt={images[0].room}
+                alt={'Apartment gallery preview 1'}
                 title={images[0].room}
                 width={images[0].width}
                 height={images[0].height}
@@ -66,7 +66,7 @@ const PhotoGalleryPreview = () => {
             >
               <Image
                 src={images[1].src}
-                alt={images[1].room}
+                alt={'Apartment gallery preview 2'}
                 title={images[1].room}
                 width={images[1].width}
                 height={images[1].height}

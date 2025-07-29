@@ -379,7 +379,7 @@ const PhotoGallery = () => {
           >
             <Image
               src={image.src}
-              alt={image.room}
+              alt={`Apartment gallery photo ${image.id}`}
               width={image.width}
               height={image.height}
               className="w-full rounded-lg object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
