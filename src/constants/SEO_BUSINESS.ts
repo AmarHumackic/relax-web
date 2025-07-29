@@ -31,7 +31,7 @@ export const SEO_BUSINESS = {
   ],
   sameAs: [
     "https://www.facebook.com/relaxstolac",
-    "https://www.instagram.com/relaxstolac",
+    // "https://www.instagram.com/relaxstolac",
   ],
   amenityFeature: [
     { "@type": "LocationFeatureSpecification", name: "WiFi", value: true },

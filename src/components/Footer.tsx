@@ -106,7 +106,7 @@ const Footer = () => {
               >
                 <FaFacebookF className="h-4 w-4" />
               </a>
-              <a
+              {/* <a
                 href={LINKS.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -114,7 +114,7 @@ const Footer = () => {
                 className="hover:border-primary hover:bg-primary flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition hover:text-white"
               >
                 <FaInstagram className="h-4 w-4" />
-              </a>
+              </a> */}
             </div>
           </div>
 

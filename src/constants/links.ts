@@ -10,7 +10,7 @@ export const LINKS = {
     "https://maps.apple.com/?q=Apartment%20Relax%20Stolac&ll=43.082903,17.958580&z=15",
   social: {
     facebook: "https://facebook.com/relaxstolac",
-    instagram: "https://instagram.com/relaxstolac",
+    // instagram: "https://instagram.com/relaxstolac",
   },
   booking: "https://www.booking.com/hotel/ba/apartment-relax-stolac.html",
   airbnbGroundLevel: "https://www.airbnb.com/rooms/1151472044322074600",
