@@ -27,9 +27,9 @@ export default function Hero() {
           {tHero("title")}
         </h1>
         <div className="mb-8 max-w-2xl">
-          <h4 className="text-primary/90 mb-6 text-lg leading-snug font-semibold md:text-2xl">
+          <h2 className="text-primary/90 mb-6 text-lg leading-snug font-semibold md:text-2xl">
             {tHero("subtitle")}
-          </h4>
+          </h2>
           <h6 className="text-base leading-relaxed font-normal text-gray-600 md:text-lg md:leading-8">
             {tHero("description")}
           </h6>

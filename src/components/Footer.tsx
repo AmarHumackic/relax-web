@@ -101,6 +101,7 @@ const Footer = () => {
                 href={LINKS.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit our Facebook page"
                 className="hover:border-primary hover:bg-primary flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition hover:text-white"
               >
                 <FaFacebookF className="h-4 w-4" />
@@ -109,6 +110,7 @@ const Footer = () => {
                 href={LINKS.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit our Instagram page"
                 className="hover:border-primary hover:bg-primary flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition hover:text-white"
               >
                 <FaInstagram className="h-4 w-4" />
