@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -141,6 +142,7 @@ export default async function RootLayout({
       </head>
 
       <body className={`bg-[#FCFCFC] ${inter.className}`}>
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-49LQ5D4XEY" />
         <NextIntlClientProvider>
           <Header />
           {children}
