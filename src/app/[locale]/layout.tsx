@@ -142,7 +142,7 @@ export default async function RootLayout({
       </head>
 
       <body className={`bg-[#FCFCFC] ${inter.className}`}>
-        <GoogleAnalytics GA_MEASUREMENT_ID="G-49LQ5D4XEY" />
+        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
         <NextIntlClientProvider>
           <Header />
           {children}
