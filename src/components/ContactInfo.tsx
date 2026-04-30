@@ -14,7 +14,7 @@ export default function ContactInfo() {
       <h3 className="text-primary mb-4 text-xl font-bold">
         {tContactInfo("contactInformation")}
       </h3>
-      <ul className="text-body-color mb-6 space-y-3 text-base">
+      <ul className="text-body-color mb-4 space-y-3 text-base">
         <li>
           <strong>{`${tContactInfo("address")}:`}</strong>{" "}
           {`${tContactInfo("addressValue")}, ${tContactInfo("country")}`}
@@ -53,7 +53,7 @@ export default function ContactInfo() {
         </li>
         <li>
           <strong>{`${tContactInfo("location")}:`}</strong>
-          <div className="mt-1 flex gap-3">
+          {/* <div className="mt-1 flex gap-3">
             <a
               href={LINKS.googleMaps}
               target="_blank"
@@ -69,8 +69,8 @@ export default function ContactInfo() {
               className="text-primary underline"
             >
               {tContactInfo("appleMaps")}
-            </a>
-          </div>
+            </a> 
+          </div> */}
         </li>
       </ul>
       <div className="mb-6 overflow-hidden rounded shadow">
