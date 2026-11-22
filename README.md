@@ -1,74 +1,91 @@
-# Startup - Free Next.js Startup Website Template
+# Relax Apartments Stolac
 
-Startup free, open-source, and premium-quality startup website template for Next.js comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+The website for **Relax Apartments**, a family-run holiday rental with two apartments in Stolac, Bosnia and Herzegovina. Guests can browse the apartments, view the photo gallery, read about local attractions and send a booking enquiry directly.
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+🌐 **Live:** [relaxstolac.com](https://relaxstolac.com)
 
-### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
 
-### 🙌 Detailed comparison between the Free and Pro versions of Startup
+## Features
 
-| Feature             | Free | Pro |
-|---------------------|------------|----------|
-| Next.js Landing Page             | ✅ Yes      | ✅ Yes      |
-| All The Integrations - Auth, DB, Payments, Blog and many more ...             | ❌ No      | ✅ Yes |
-| Homepage Variations             | 1      | 2 |
-| Additional SaaS Pages and Components             | ❌ No      | ✅ Yes |
-| Functional Blog with Sanity       | ❌ No      | ✅ Yes | ✅ Yes |
-| Use with Commercial Projects            | ✅ Yes      | ✅ Yes      |
-| Lifetime Free Updates             | ✅ Yes      | ✅ Yes |
-| Email Support       | ❌ No         | ✅ Yes       |
-| Community Support         | ✅ Yes         | ✅ Yes       |
+- **Bilingual (English / Bosnian)**: built with `next-intl`. English is served without a prefix and Bosnian under `/bs`. Custom middleware picks Bosnian for visitors whose browser prefers `bs`, `hr` or `sr`.
+- **Booking enquiry form**: date pickers for check-in and check-out, apartment selection and a guest limit for each apartment. Enquiries go to a Next.js API route that sends them by email through Nodemailer.
+- **Photo gallery**: filterable by apartment, with a full-screen lightbox.
+- **Pages**: Home, Gallery, Amenities, Attractions and Contact, plus a custom 404 page.
+- **SEO**
+  - Metadata for each page and locale: title, description, canonical URL, `hreflang` alternates, Open Graph and Twitter cards
+  - Schema.org structured data (`LodgingBusiness` with reviews and ratings, plus `FAQPage`)
+  - Generated `sitemap.xml` with language alternates, `robots.txt` and a web app manifest
+- **Performance**: WebP/AVIF images through `next/image`, long-lived cache headers for static assets, optimized package imports and inlined critical CSS.
+- **Security headers**: `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`.
+- **Accessibility**: semantic markup, labelled form controls and ARIA attributes on interactive elements.
+- **Analytics**: Google Analytics 4, loaded only when a measurement ID is configured.
 
+## Tech stack
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+| Area       | Tools                                                    |
+| ---------- | -------------------------------------------------------- |
+| Framework  | Next.js 15 (App Router), React 19                        |
+| Language   | TypeScript                                               |
+| Styling    | Tailwind CSS 4                                           |
+| i18n       | next-intl                                                |
+| Email      | Nodemailer (Gmail SMTP)                                  |
+| UI         | react-datepicker, yet-another-react-lightbox, react-icons |
+| Tooling    | ESLint, Prettier (with `prettier-plugin-tailwindcss`)    |
 
-[![Startup Pro](https://raw.githubusercontent.com/NextJSTemplates/startup-nextjs/main/startup-pro.webp)](https://nextjstemplates.com/templates/saas-starter-startup)
+## Project structure
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+```
+src/
+├── app/
+│   ├── [locale]/          # Localized pages (home, gallery, amenities, attractions, contact)
+│   ├── api/contact/       # Booking enquiry endpoint (sends email)
+│   └── sitemap.ts         # Generated sitemap with hreflang alternates
+├── components/            # UI sections and shared components
+├── constants/             # Business info, links, apartment capacity
+├── i18n/                  # next-intl routing and request config
+├── lib/seo.ts             # Metadata helpers and metadata for each page
+├── messages/              # Translations (en.json, bs.json)
+├── middleware.ts          # Locale detection from Accept-Language
+└── styles/
+```
 
+## Getting started
 
-### [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+**Requirements:** Node.js 18.18 or newer and npm.
 
-### [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+```bash
+git clone https://github.com/AmarHumackic/relax-web.git
+cd relax-web
+npm install
+cp .env.example .env.local   # then fill in the values
+npm run dev
+```
 
-### [📦 Download](https://nextjstemplates.com/templates/startup)
+Then open [http://localhost:3000](http://localhost:3000).
 
-### [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+### Environment variables
 
-### [🔌 Documentation](https://nextjstemplates.com/docs)
+| Variable                     | Description                                                     |
+| ---------------------------- | --------------------------------------------------------------- |
+| `CONTACT_GMAIL_USER`         | Gmail address used to send booking enquiries                    |
+| `CONTACT_GMAIL_APP_PASSWORD` | [Google app password](https://support.google.com/accounts/answer/185833) for that account |
+| `GA_MEASUREMENT_ID`          | Google Analytics 4 measurement ID (optional)                    |
 
-### ⚡ Deploy Now
+### Scripts
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
+| Command         | Description              |
+| --------------- | ------------------------ |
+| `npm run dev`   | Start the dev server     |
+| `npm run build` | Create a production build |
+| `npm run start` | Serve the production build |
+| `npm run lint`  | Run ESLint               |
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
+## License
 
+The source code is released under the [MIT License](LICENSE). The project was originally started from the open-source [Startup Next.js template](https://github.com/NextJSTemplates/startup-nextjs), also MIT-licensed.
 
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
-
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
-
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
-
-### Update Log
-
-**10 April 2025**
-- Fix peer deps issue with Next.js 15
-- Upgrade to tailwind v4
-- Refactored blog cards for handling edge cases(text ellipsis on bio, keeping author details at the bottom etc.)
-- Re-wrote blog details page with icons separation, fallback author image and better markup.
-- Fixed duplicate key errors on homepage.
-- Separated icons on theme-switcher button, and refactored scroll-to-top button.
-
-**29 Jan 2025**
-- Upgraded to Next.js 15
+Photos, logos, texts and other content about Relax Apartments are **not** covered by the MIT License and may not be reused without permission.
